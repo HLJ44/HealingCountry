@@ -7,3 +7,10 @@ We considered three states in Australia
 * Noongar (Perth WA) and 
 * Bundjalung (Northern Rivers NSW)
 
+Climate variables considered
+
+* Temperature (Min/Max)
+* Rainfall (Total)
+* Humidity(9.00 am, 3.00 pm)
+
+
