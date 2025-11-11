@@ -12,5 +12,5 @@ Climate variables considered
 * Temperature (Min/Max)
 * Rainfall (Total)
 * Humidity(9.00 am, 3.00 pm)
-
+* Seal level 
 
