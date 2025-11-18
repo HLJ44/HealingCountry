@@ -34,7 +34,7 @@ Climate variables considered
        Station code:	471
        Columns: Level
   
-*File name:ER_Perth, ER_Tennant, ER_NSW
+* File name:ER_Perth, ER_Tennant, ER_NSW
 
        URL: [https://psmsl.org/data/obtaining/stations/111.php?utm_source=chatgpt.com]   (https://www.longpaddock.qld.gov.au/silo/point-data/#responseTab2)
        Temporal resolution: Daily
