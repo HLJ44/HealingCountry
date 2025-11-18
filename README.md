@@ -42,3 +42,4 @@ Climate variables considered
        Station code:	471
        Columns: evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))
                 radiation (MJ/m2)
+       Comments: SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily                         confounded by changes resulting from instrumental biases and relocating recording stations.
