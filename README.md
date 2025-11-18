@@ -10,10 +10,10 @@ We considered three states in Australia
 Climate variables considered
 
 * File name:agcdBandjalung, agcdwarumungu, agcdKuana
-       URL: [https://www.longpaddock.qld.gov.au/silo/point-data/](http://opendap.bom.gov.au:8080/thredds)
-       Temporal resolution: Monthly
-       Timespan: 1910 - 2024
-       Columns:rainfall (total precipitation, mm)
+       -URL: [https://www.longpaddock.qld.gov.au/silo/point-data/](http://opendap.bom.gov.au:8080/thredds)
+      -Temporal resolution: Monthly
+      -Timespan: 1910 - 2024
+   -Columns:rainfall (total precipitation, mm)
                tmax (Maximum temperature, 0C)
                tmin (Minimum temperature, 0C)
   
