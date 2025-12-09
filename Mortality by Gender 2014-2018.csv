@@ -1,0 +1,130 @@
+Site,Reference,Name,Gender,cause,Deaths
+"Perth, WA",SA350302,Perth City,Male,Coronary heart disease ,215
+"Perth, WA",SA350302,Perth City,Male,Cerebrovascular disease ,90
+"Perth, WA",SA350302,Perth City,Male,Chronic obstructive pulmonary disease (COPD) ,54
+"Perth, WA",SA350302,Perth City,Male,Heart failure and complications  ,30
+"Perth, WA",SA350302,Perth City,Female,Coronary heart disease ,215
+"Perth, WA",SA350302,Perth City,Female,Cerebrovascular disease ,90
+"Perth, WA",SA350302,Perth City,Female,Chronic obstructive pulmonary disease (COPD) ,54
+"Perth, WA",SA350302,Perth City,Female,Heart failure and complications  ,30
+"Perth, WA",SA350502,Stirling,Male,Coronary heart disease ,424
+"Perth, WA",SA350502,Stirling,Male,Cerebrovascular disease ,150
+"Perth, WA",SA350502,Stirling,Male,Chronic obstructive pulmonary disease (COPD) ,92
+"Perth, WA",SA350502,Stirling,Male,Heart failure and complications  ,80
+"Perth, WA",SA350502,Stirling,Female,Coronary heart disease ,396
+"Perth, WA",SA350502,Stirling,Female,Cerebrovascular disease ,193
+"Perth, WA",SA350502,Stirling,Female,Heart failure and complications  ,93
+"Perth, WA",SA350502,Stirling,Female,Chronic obstructive pulmonary disease (COPD) ,77
+"Perth, WA",SA350501,Joondalup,Male,Coronary heart disease ,258
+"Perth, WA",SA350501,Joondalup,Male,Chronic obstructive pulmonary disease (COPD) ,85
+"Perth, WA",SA350501,Joondalup,Male,Cerebrovascular disease ,81
+"Perth, WA",SA350501,Joondalup,Male,Heart failure and complications  ,34
+"Perth, WA",SA350501,Joondalup,Female,Coronary heart disease ,193
+"Perth, WA",SA350501,Joondalup,Female,Cerebrovascular disease ,118
+"Perth, WA",SA350501,Joondalup,Female,Chronic obstructive pulmonary disease (COPD) ,54
+"Perth, WA",SA350501,Joondalup,Female,Heart failure and complications  ,32
+"Perth, WA",SA350401,Bayswater - Bassendean,Male,Coronary heart disease ,245
+"Perth, WA",SA350401,Bayswater - Bassendean,Male,Cerebrovascular disease ,81
+"Perth, WA",SA350401,Bayswater - Bassendean,Male,Chronic obstructive pulmonary disease (COPD) ,54
+"Perth, WA",SA350401,Bayswater - Bassendean,Male,Heart failure and complications  ,22
+"Perth, WA",SA350401,Bayswater - Bassendean,Female,Coronary heart disease ,223
+"Perth, WA",SA350401,Bayswater - Bassendean,Female,Cerebrovascular disease ,110
+"Perth, WA",SA350401,Bayswater - Bassendean,Female,Chronic obstructive pulmonary disease (COPD) ,49
+"Perth, WA",SA350401,Bayswater - Bassendean,Female,Heart failure and complications  ,24
+"Perth, WA",SA350602,Belmont - Victoria Park,Male,Coronary heart disease ,168
+"Perth, WA",SA350602,Belmont - Victoria Park,Male,Chronic obstructive pulmonary disease (COPD) ,68.999999
+"Perth, WA",SA350602,Belmont - Victoria Park,Male,Cerebrovascular disease ,49
+"Perth, WA",SA350602,Belmont - Victoria Park,Male,Heart failure and complications  ,18
+"Perth, WA",SA350602,Belmont - Victoria Park,Female,Coronary heart disease ,95
+"Perth, WA",SA350602,Belmont - Victoria Park,Female,Cerebrovascular disease ,60
+"Perth, WA",SA350602,Belmont - Victoria Park,Female,Chronic obstructive pulmonary disease (COPD) ,39
+"Perth, WA",SA350602,Belmont - Victoria Park,Female,Heart failure and complications  ,23
+"Perth, WA",SA321503,Murray River - Swan Hill,Male,Coronary heart disease ,158
+"Perth, WA",SA321503,Murray River - Swan Hill,Male,Chronic obstructive pulmonary disease (COPD) ,61
+"Perth, WA",SA321503,Murray River - Swan Hill,Male,Cerebrovascular disease ,47
+"Perth, WA",SA321503,Murray River - Swan Hill,Male,Heart failure and complications  ,25
+"Perth, WA",SA321503,Murray River - Swan Hill,Female,Coronary heart disease ,117
+"Perth, WA",SA321503,Murray River - Swan Hill,Female,Cerebrovascular disease ,68
+"Perth, WA",SA321503,Murray River - Swan Hill,Female,Chronic obstructive pulmonary disease (COPD) ,46
+"Perth, WA",SA321503,Murray River - Swan Hill,Female,Heart failure and complications  ,41
+"Perth, WA",SA350603,Canning,Male,Coronary heart disease ,185
+"Perth, WA",SA350603,Canning,Male,Cerebrovascular disease ,77
+"Perth, WA",SA350603,Canning,Male,Chronic obstructive pulmonary disease (COPD) ,56
+"Perth, WA",SA350603,Canning,Male,Heart failure and complications  ,26
+"Perth, WA",SA350603,Canning,Female,Coronary heart disease ,213
+"Perth, WA",SA350603,Canning,Female,Cerebrovascular disease ,141
+"Perth, WA",SA350603,Canning,Female,Chronic obstructive pulmonary disease (COPD) ,56
+"Perth, WA",SA350603,Canning,Female,Heart failure and complications  ,35
+"Perth, WA",SA350604,Gosnells,Male,Coronary heart disease ,196
+"Perth, WA",SA350604,Gosnells,Male,Chronic obstructive pulmonary disease (COPD) ,53
+"Perth, WA",SA350604,Gosnells,Male,Cerebrovascular disease ,44
+"Perth, WA",SA350604,Gosnells,Male,Heart failure and complications  ,25
+"Perth, WA",SA350604,Gosnells,Female,Coronary heart disease ,119
+"Perth, WA",SA350604,Gosnells,Female,Cerebrovascular disease ,67
+"Perth, WA",SA350604,Gosnells,Female,Chronic obstructive pulmonary disease (COPD) ,48
+"Perth, WA",SA350601,Armadale,Male,Coronary heart disease ,129
+"Perth, WA",SA350601,Armadale,Male,Cerebrovascular disease ,46
+"Perth, WA",SA350601,Armadale,Male,Chronic obstructive pulmonary disease (COPD) ,43
+"Perth, WA",SA350601,Armadale,Female,Coronary heart disease ,91
+"Perth, WA",SA350601,Armadale,Female,Cerebrovascular disease ,44
+"Perth, WA",SA350601,Armadale,Female,Chronic obstructive pulmonary disease (COPD) ,43
+"Perth, WA",SA350601,Armadale,Female,Heart failure and complications  ,20
+"Perth, WA",SA350701,Cockburn,Male,Coronary heart disease ,162
+"Perth, WA",SA350701,Cockburn,Male,Cerebrovascular disease ,61
+"Perth, WA",SA350701,Cockburn,Male,Chronic obstructive pulmonary disease (COPD) ,38
+"Perth, WA",SA350701,Cockburn,Female,Coronary heart disease ,119
+"Perth, WA",SA350701,Cockburn,Female,Cerebrovascular disease ,74
+"Perth, WA",SA350701,Cockburn,Female,Chronic obstructive pulmonary disease (COPD) ,44
+"Perth, WA",SA350701,Cockburn,Female,Heart failure and complications  ,34
+"Perth, WA",SA350705,Rockingham,Male,Coronary heart disease ,199
+"Perth, WA",SA350705,Rockingham,Male,Chronic obstructive pulmonary disease (COPD) ,94
+"Perth, WA",SA350705,Rockingham,Male,Cerebrovascular disease ,59
+"Perth, WA",SA350705,Rockingham,Male,Heart failure and complications  ,31
+"Perth, WA",SA350705,Rockingham,Female,Coronary heart disease ,116
+"Perth, WA",SA350705,Rockingham,Female,Chronic obstructive pulmonary disease (COPD) ,80
+"Perth, WA",SA350705,Rockingham,Female,Cerebrovascular disease ,76
+"Perth, WA",SA350705,Rockingham,Female,Heart failure and complications  ,27
+"Perth, WA",SA350702,Fremantle,Male,Coronary heart disease ,83
+"Perth, WA",SA350702,Fremantle,Male,Cerebrovascular disease ,41
+"Perth, WA",SA350702,Fremantle,Male,Chronic obstructive pulmonary disease (COPD) ,29
+"Perth, WA",SA350702,Fremantle,Male,Heart failure and complications  ,17
+"Perth, WA",SA350702,Fremantle,Female,Coronary heart disease ,80
+"Perth, WA",SA350702,Fremantle,Female,Cerebrovascular disease ,65
+"Perth, WA",SA350702,Fremantle,Female,Chronic obstructive pulmonary disease (COPD) ,18
+"Perth, WA",SA350702,Fremantle,Female,Heart failure and complications  ,17
+"Perth, WA",SA350703,Kwinana,Male,Coronary heart disease ,65
+"Perth, WA",SA350703,Kwinana,Male,Chronic obstructive pulmonary disease (COPD) ,23
+"Perth, WA",SA350703,Kwinana,Male,Cerebrovascular disease ,17
+"Perth, WA",SA350703,Kwinana,Male,Heart failure and complications  ,10
+"Perth, WA",SA350703,Kwinana,Female,Coronary heart disease ,36
+"Perth, WA",SA350703,Kwinana,Female,Cerebrovascular disease ,18
+"Perth, WA",SA350703,Kwinana,Female,Chronic obstructive pulmonary disease (COPD) ,16
+"Perth, WA",SA350703,Kwinana,Female,Heart failure and complications  ,6
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Male,Coronary heart disease ,256
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Male,Cerebrovascular disease ,106
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Male,Chronic obstructive pulmonary disease (COPD) ,78
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Male,Heart failure and complications  ,44
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Female,Cerebrovascular disease ,191
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Female,Coronary heart disease ,184
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Female,Chronic obstructive pulmonary disease (COPD) ,65
+"Northern Rivers, NSW",SA311201,Richmond Valley - Coastal,Female,Heart failure and complications  ,45
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Male,Coronary heart disease ,262
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Male,Cerebrovascular disease ,93
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Male,Chronic obstructive pulmonary disease (COPD) ,83
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Female,Coronary heart disease ,233
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Female,Cerebrovascular disease ,197
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Female,Chronic obstructive pulmonary disease (COPD) ,62
+"Northern Rivers, NSW",SA311202,Richmond Valley - Hinterland,Female,Heart failure and complications  ,28
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Male,Coronary heart disease ,297
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Male,Chronic obstructive pulmonary disease (COPD) ,117
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Male,Cerebrovascular disease ,100
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Male,Heart failure and complications  ,28
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Female,Coronary heart disease ,206
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Female,Cerebrovascular disease ,132
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Female,Chronic obstructive pulmonary disease (COPD) ,125
+"Northern Rivers, NSW",SA312302,Campbelltown (NSW),Female,Heart failure and complications  ,50
+"Tennant Creek, NT",SA370202,Barkly,Male,Coronary heart disease ,26
+"Tennant Creek, NT",SA370202,Barkly,Male,Chronic obstructive pulmonary disease (COPD) ,5
+"Tennant Creek, NT",SA370202,Barkly,Female,Coronary heart disease ,6
+"Tennant Creek, NT",SA370202,Barkly,Female,Cerebrovascular disease ,2
+"Tennant Creek, NT",SA370202,Barkly,Female,Chronic obstructive pulmonary disease (COPD) ,2
