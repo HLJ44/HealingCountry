@@ -17,6 +17,9 @@ Climate variables considered
       Columns:rainfall (total precipitation, mm)
                tmax (Maximum temperature, 0C)
                tmin (Minimum temperature, 0C)
+     URL: [https://www.longpaddock.qld.gov.au/silo/gridded-data/]
+     Timespan: 1889 - 2025
+     Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
   
 * File name:vapourpre_Kuana, vapourpre_Warumungu, vapourpre_Bandjulung
    
