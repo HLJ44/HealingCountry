@@ -7,7 +7,7 @@ We considered three states in Australia
 * Noongar (Perth WA) and 
 * Bundjalung (Northern Rivers NSW)
 
-Climate variables considered
+## Climate variables 
 
 * File name:agcdBandjalung, agcdwarumungu, agcdKuana
   
@@ -21,6 +21,9 @@ Climate variables considered
      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
      Timespan: 1889 - 2025
      Comments: Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
+
+  <img width="696" height="407" alt="image" src="https://github.com/user-attachments/assets/61ffae56-18c7-4932-a195-539689f19b0c" />
+
   
 * File name:vapourpre_Kuana, vapourpre_Warumungu, vapourpre_Bandjulung
    
@@ -37,7 +40,10 @@ Climate variables considered
        Timespan: 1897 - 2024
        Station code:	471
        Columns: Level
-  
+
+
+  <img width="735" height="410" alt="image" src="https://github.com/user-attachments/assets/ff69e9de-af93-40e4-a0d1-2206d2432747" />
+
 * File name:ER_Perth, ER_Tennant, ER_NSW
 
        URL: [https://psmsl.org/data/obtaining/stations/111.php?utm_source=chatgpt.com]   (https://www.longpaddock.qld.gov.au/silo/point-data/#responseTab2)
@@ -48,7 +54,7 @@ Climate variables considered
                 radiation (MJ/m2)
        Comments: SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
 
-Mortality Data
+## Mortality Data
 
 * File name:Mortality by Gender 2014-2018, Mortality by Gender 2019-2023, All course of deaths
   
@@ -56,3 +62,16 @@ Mortality Data
        Temporal resolution: Annual
        Timespan: 2014 - 2018 and 2019 - 2023
        Columns: Death count
+
+<img width="1011" height="648" alt="image" src="https://github.com/user-attachments/assets/e8b7c3dc-f763-4dab-8947-44b8ca4e3b10" />
+
+## Health Data
+  
+* File name:Mental health
+  
+       URL: https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books
+       Temporal resolution: Annual
+       Timespan: 2017 - 2022
+       Worksheets: NSW, WA, NT
+
+  <img width="821" height="567" alt="image" src="https://github.com/user-attachments/assets/61a573f2-cee2-4536-8dd6-95fed6a2e740" />
