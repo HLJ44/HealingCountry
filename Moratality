@@ -1,0 +1,236 @@
+#----------------- Mortality Data-----------------------------------------------
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+df <- read_csv("Mortality by Gender 2014.csv")
+head(df)
+
+combined_plot <- df %>%
+  group_by(Site, Gender) %>%
+  summarise(Total_Deaths = sum(Deaths, na.rm = TRUE))
+
+ggplot(combined_plot, 
+       aes(x = Site, y = Total_Deaths, fill = Gender)) +
+  geom_col(position = "dodge") +
+  coord_flip() +
+  labs(title = "Gender-wise Mortality by Site",
+       x = "Site",
+       y = "Total Deaths") +
+  theme_minimal()
+
+#Violin Plot — Gender-wise distribution by site
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_violin(trim = FALSE) +
+  facet_wrap(~ Site, scales = "free") +
+  labs(title = "Violin Plot of Mortality by Gender and Site 2014-2018",
+       x = "Gender", y = "Deaths") +
+  theme_minimal()
+
+#--------- All courses of deaths by sites---------------------------------------
+df <- read.csv("All causes of death.csv")
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+df_long <- df %>%
+  pivot_longer(
+    cols = c(male, female),
+    names_to = "sex",
+    values_to = "deaths"
+  )
+
+ggplot(df_long, aes(x = year, y = deaths, color = sex, group = sex)) +
+  geom_line() +
+  geom_point() +
+  facet_wrap(~ site) +
+  labs(
+    title = "Male and Female Deaths by Site and Year",
+    x = "Year",
+    y = "Number of deaths"
+  )
+
+#Treemap
+df <- read.csv("Mortality by Gender 2014.csv",  fileEncoding = "latin1")
+head(df)
+library(treemapify)
+library(dplyr)
+
+df_sum <- df %>% group_by(cause) %>% summarise(deaths = sum(Deaths))
+
+ggplot(df,aes(area = Deaths, fill = cause, label = cause)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "white", place = "centre", grow = TRUE) +
+  labs(title = "Treemap of Causes of Death from 2014-2018",
+       fill = "Cause") +
+  theme_minimal()
+
+df_heat <- df %>% count(Site, cause)
+ggplot(df_heat, aes(x = Site, y = cause, fill = n)) +
+  geom_tile() + 
+  labs(title = "Heatmap of Deaths by Site and Cause of  death",
+       x = "Site", y = "Cause", fill = "Deaths") +
+  theme_minimal()
+
+
+# Plot: Facet by site and course, color by gender
+library(dplyr)
+
+df <- df %>%
+  mutate(course_abbrev = recode(cause,
+                                "Coronary heart disease "= "CHD",
+                                "Cerebrovascular disease "  = "CD",
+                                "Chronic obstructive pulmonary disease (COPD) "= "COPD",
+                                "Heart failure and complications  " = "HFC"))
+
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_col(position = "dodge") +
+  facet_grid(Site ~ course_abbrev, scales = "free_y") +
+  labs(
+    title = "Causes of Death by Site and Gender",
+    x = "Gender",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none"
+  )
+
+#Lollipop Chart
+library(ggplot2)
+library(dplyr)
+
+ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
+  geom_segment(aes(xend = course_abbrev, yend = 0), linewidth = 1) +
+  geom_point(size = 4) +
+  facet_wrap(~ Site) +
+  labs(
+    title = "Lollipop Chart of Death Counts from 2014 to 2023",
+    x = "Cause of death (Abbreviation)",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.title = element_blank()
+  )
+
+#----------------- 2019-2023----------------------------------
+library(ggplot2)
+library(dplyr)
+library(treemapify)
+
+df <- read_csv("Mortality by Gender 2019.csv")
+attach(df)
+head(df)
+
+combined_plot <- df %>%
+  group_by(Site, Gender) %>%
+  summarise(Total_Deaths = sum(Deaths, na.rm = TRUE))
+
+ggplot(combined_plot, 
+       aes(x = Site, y = Total_Deaths, fill = Gender)) +
+  geom_col(position = "dodge") +
+  coord_flip() +
+  labs(title = "Gender-wise Mortality for three Site from 2019 to 2023",
+       x = "Site",
+       y = "Total Deaths") +
+  theme_minimal()
+
+#Violin Plot — Gender-wise distribution by site
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_violin(trim = FALSE) +
+  facet_wrap(~ Site, scales = "free") +
+  labs(title = "Violin Plot of Mortality by Gender and Site 2019-2023",
+       x = "Gender", y = "Deaths") +
+  theme_minimal()
+
+#Treemap
+df_sum <- df %>% group_by(cause) %>% summarise(deaths = sum(Deaths))
+
+ggplot(df,aes(area = Deaths, fill = cause, label = cause)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "white", place = "centre", grow = TRUE) +
+  labs(title = "Treemap of Causes of Death from 2019-2023",
+       fill = "Cause") +
+  theme_minimal()
+
+df_heat <- df %>% count(Site, cause)
+ggplot(df_heat, aes(x = Site, y = cause, fill = n)) +
+  geom_tile() + 
+  labs(title = "Heatmap of Deaths by Site and Cause of  death",
+       x = "Site", y = "Cause", fill = "Deaths") +
+  theme_minimal()
+
+
+# Plot: Facet by site and course, color by gender
+
+df <- df %>%
+  mutate(course_abbrev = recode(cause,
+                                "Coronary heart disease"= "CHD",
+                                "Cerebrovascular disease"  = "CD",
+                                "Chronic obstructive pulmonary disease (COPD)"= "COPD",
+                                "Coronavirus disease 2019 (COVID-19)" = "COVID-19",
+                                "Heart failure and complications and ill-defined heart disease" = "HFC"))
+
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_col(position = "dodge") +
+  facet_grid(Site ~ course_abbrev, scales = "free_y") +
+  labs(
+    title = "Causes of Death by Site and Gender from 2019 to 2023",
+    x = "Gender",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none"
+  )
+
+#Lollipop Chart
+ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
+  geom_segment(aes(xend = course_abbrev, yend = 0), linewidth = 1) +
+  geom_point(size = 4) +
+  facet_wrap(~ Site) +
+  labs(
+    title = "Lollipop Chart of Death Counts from 2019 to 2023",
+    x = "Cause of death (Abbreviation)",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.title = element_blank()
+  )
+
+#______________________ ATMOSPHERE ______________________________
+library(raster)
+
+grib_file <- "C:/Users/jayetile/Downloads/atmosphere.grib"
+
+# Read GRIB
+r <- brick(grib_file)
+
+# Convert to data frame
+df <- as.data.frame(r, xy = TRUE)
+
+# Write to CSV
+write.csv(df, "atmosphere.csv", row.names = FALSE)
+
+library(terra)
+
+grib_file <- "atmosphere.grib"
+r <- rast(grib_file)
+
+df <- as.data.frame(r, xy = TRUE)
+
+write.csv(df, "output.csv", row.names = FALSE)
+
+library(stars)
+
+gr <- read_stars("atmosphere.grib")
+
+df <- as.data.frame(gr, xy = TRUE, long = FALSE)
+
+write.csv(df, "output.csv", row.names = FALSE)
