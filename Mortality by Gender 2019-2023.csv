@@ -1,0 +1,140 @@
+Site,Station,SA3,cause,Gender,Deaths
+"Tennant Creek, NT ",SA370202,Barkly,Coronary heart disease,Male,17
+"Tennant Creek, NT ",SA370202,Barkly,Cerebrovascular disease ,Male,3
+"Tennant Creek, NT ",SA370202,Barkly,Chronic obstructive pulmonary disease (COPD) ,Male,2
+"Tennant Creek, NT ",SA370202,Barkly,Coronary heart disease,FeMale,6
+"Tennant Creek, NT ",SA370202,Barkly,Chronic obstructive pulmonary disease (COPD) ,FeMale,4
+"Tennant Creek, NT ",SA370202,Barkly,Cerebrovascular disease,FeMale,3
+"Perth, WA ",SA350302,Perth City,Coronary heart disease,Male,246
+"Perth, WA ",SA350302,Perth City,Cerebrovascular disease ,Male,101
+"Perth, WA ",SA350302,Perth City,Chronic obstructive pulmonary disease (COPD) ,Male,54
+"Perth, WA ",SA350302,Perth City,Heart failure and complications and ill-defined heart disease ,Male,24
+"Perth, WA ",SA350302,Perth City,Coronary heart disease ,FeMale,208
+"Perth, WA ",SA350302,Perth City,Cerebrovascular disease ,FeMale,176
+"Perth, WA ",SA350302,Perth City,Chronic obstructive pulmonary disease (COPD) ,FeMale,57
+"Perth, WA ",SA350302,Perth City,Heart failure and complications and ill-defined heart disease ,FeMale,33
+"Perth, WA ",SA350302,Perth City,Coronavirus disease 2019 (COVID-19) ,FeMale,27
+"Perth, WA ",SA350702,Fremantle,Coronary heart disease ,Male,83
+"Perth, WA ",SA350702,Fremantle,Cerebrovascular disease ,Male,25
+"Perth, WA ",SA350702,Fremantle,Chronic obstructive pulmonary disease (COPD) ,Male,20
+"Perth, WA ",SA350702,Fremantle,Coronary heart disease ,FeMale,76
+"Perth, WA ",SA350702,Fremantle,Cerebrovascular disease ,FeMale,53
+"Perth, WA ",SA350702,Fremantle,Chronic obstructive pulmonary disease (COPD) ,FeMale,20
+"Perth, WA ",SA350702,Fremantle,Heart failure and complications and ill-defined heart disease ,FeMale,13
+"Perth, WA ",SA350702,Fremantle,Coronavirus disease 2019 (COVID-19) ,FeMale,13
+"Perth, WA ",SA350502,Stirling,Coronary heart disease ,Male,463
+"Perth, WA ",SA350502,Stirling,Chronic obstructive pulmonary disease (COPD) ,Male,125
+"Perth, WA ",SA350502,Stirling,Heart failure and complications and ill-defined heart disease ,Male,67
+"Perth, WA ",SA350502,Stirling,Coronavirus disease 2019 (COVID-19) ,Male,58
+"Perth, WA ",SA350502,Stirling,Coronary heart disease ,FeMale,378
+"Perth, WA ",SA350502,Stirling,Cerebrovascular disease ,FeMale,235
+"Perth, WA ",SA350502,Stirling,Chronic obstructive pulmonary disease (COPD) ,FeMale,91
+"Perth, WA ",SA350502,Stirling,Heart failure and complications and ill-defined heart disease ,FeMale,76
+"Perth, WA ",SA350502,Stirling,Coronavirus disease 2019 (COVID-19) ,FeMale,51
+"Perth, WA ",SA350501,Joondalup,Coronary heart disease ,Male,225
+"Perth, WA ",SA350501,Joondalup,Cerebrovascular disease ,Male,88
+"Perth, WA ",SA350501,Joondalup,Chronic obstructive pulmonary disease (COPD) ,Male,62
+"Perth, WA ",SA350501,Joondalup,Coronary heart disease ,FeMale,158
+"Perth, WA ",SA350501,Joondalup,Cerebrovascular disease ,FeMale,112
+"Perth, WA ",SA350501,Joondalup,Chronic obstructive pulmonary disease (COPD) ,FeMale,61
+"Perth, WA ",SA350501,Joondalup,Heart failure and complications and ill-defined heart disease ,FeMale,43
+"Perth, WA ",SA350501,Joondalup,Coronavirus disease 2019 (COVID-19) ,FeMale,26
+"Perth, WA ",SA350401,Bayswater - Bassendean,Coronary heart disease ,Male,233
+"Perth, WA ",SA350401,Bayswater - Bassendean,Chronic obstructive pulmonary disease (COPD) ,Male,67
+"Perth, WA ",SA350401,Bayswater - Bassendean,Cerebrovascular disease ,Male,63
+"Perth, WA ",SA350401,Bayswater - Bassendean,Coronavirus disease 2019 (COVID-19) ,Male,36
+"Perth, WA ",SA350401,Bayswater - Bassendean,Coronary heart disease ,FeMale,169
+"Perth, WA ",SA350401,Bayswater - Bassendean,Cerebrovascular disease ,FeMale,97
+"Perth, WA ",SA350401,Bayswater - Bassendean,Chronic obstructive pulmonary disease (COPD) ,FeMale,45
+"Perth, WA ",SA350401,Bayswater - Bassendean,Heart failure and complications and ill-defined heart disease,FeMale,24
+"Perth, WA ",SA350401,Bayswater - Bassendean,Coronavirus disease 2019 (COVID-19),FeMale,19
+"Perth, WA ",SA350602,Belmont - Victoria Park,Coronary heart disease,Male,160
+"Perth, WA ",SA350602,Belmont - Victoria Park,Cerebrovascular disease ,Male,49
+"Perth, WA ",SA350602,Belmont - Victoria Park,Chronic obstructive pulmonary disease (COPD) ,Male,45
+"Perth, WA ",SA350602,Belmont - Victoria Park,Coronavirus disease 2019 (COVID-19),Male,24
+"Perth, WA ",SA350602,Belmont - Victoria Park,Heart failure and complications and ill-defined heart disease,Male,21
+"Perth, WA ",SA350602,Belmont - Victoria Park,Coronary heart disease,FeMale,108
+"Perth, WA ",SA350602,Belmont - Victoria Park,Cerebrovascular disease,FeMale,72
+"Perth, WA ",SA350602,Belmont - Victoria Park,Chronic obstructive pulmonary disease (COPD) ,FeMale,35
+"Perth, WA ",SA350602,Belmont - Victoria Park,Coronavirus disease 2019 (COVID-19),FeMale,15
+"Perth, WA ",SA350602,Belmont - Victoria Park,Heart failure and complications and ill-defined heart disease,FeMale,14
+"Perth, WA ",SA321503,Murray River - Swan Hill,Coronary heart disease ,Male,141
+"Perth, WA ",SA321503,Murray River - Swan Hill,Chronic obstructive pulmonary disease (COPD) ,Male,73
+"Perth, WA ",SA321503,Murray River - Swan Hill,Cerebrovascular disease ,Male,42
+"Perth, WA ",SA321503,Murray River - Swan Hill,Heart failure and complications and ill-defined heart disease ,Male,37
+"Perth, WA ",SA321503,Murray River - Swan Hill,Coronavirus disease 2019 (COVID-19) ,Male,15
+"Perth, WA ",SA321503,Murray River - Swan Hill,Coronary heart disease,FeMale,96
+"Perth, WA ",SA321503,Murray River - Swan Hill,Chronic obstructive pulmonary disease (COPD) ,FeMale,54
+"Perth, WA ",SA321503,Murray River - Swan Hill,Cerebrovascular disease,FeMale,48
+"Perth, WA ",SA321503,Murray River - Swan Hill,Heart failure and complications and ill-defined heart disease,FeMale,42
+"Perth, WA ",SA321503,Murray River - Swan Hill,Coronavirus disease 2019 (COVID-19) ,FeMale,13
+"Perth, WA ",SA350603,Canning,Coronary heart disease ,Male,206
+"Perth, WA ",SA350603,Canning,Cerebrovascular disease ,Male,81
+"Perth, WA ",SA350603,Canning,Chronic obstructive pulmonary disease (COPD),Male,43
+"Perth, WA ",SA350603,Canning,Heart failure and complications and ill-defined heart disease ,Male,26
+"Perth, WA ",SA350603,Canning,Coronavirus disease 2019 (COVID-19),Male,25
+"Perth, WA ",SA350603,Canning,Coronary heart disease ,FeMale,158
+"Perth, WA ",SA350603,Canning,Cerebrovascular disease ,FeMale,103
+"Perth, WA ",SA350603,Canning,Chronic obstructive pulmonary disease (COPD) ,FeMale,67
+"Perth, WA ",SA350603,Canning,Heart failure and complications and ill-defined heart disease ,FeMale,36
+"Perth, WA ",SA350604,Gosnells,Coronary heart disease ,Male,209
+"Perth, WA ",SA350604,Gosnells,Chronic obstructive pulmonary disease (COPD),Male,84
+"Perth, WA ",SA350604,Gosnells,Cerebrovascular disease ,Male,83
+"Perth, WA ",SA350604,Gosnells,Coronary heart disease ,FeMale,157
+"Perth, WA ",SA350604,Gosnells,Cerebrovascular disease ,FeMale,90
+"Perth, WA ",SA350604,Gosnells,Chronic obstructive pulmonary disease (COPD) ,FeMale,60
+"Perth, WA ",SA350601,Armadale,Coronary heart disease ,Male,157
+"Perth, WA ",SA350601,Armadale,Cerebrovascular disease ,Male,48
+"Perth, WA ",SA350601,Armadale,Chronic obstructive pulmonary disease (COPD),Male,45
+"Perth, WA ",SA350601,Armadale,Coronavirus disease 2019 (COVID-19) ,Male,20
+"Perth, WA ",SA350601,Armadale,Coronary heart disease ,FeMale,89
+"Perth, WA ",SA350601,Armadale,Cerebrovascular disease ,FeMale,36
+"Perth, WA ",SA350601,Armadale,Chronic obstructive pulmonary disease (COPD) ,FeMale,34
+"Perth, WA ",SA350601,Armadale,Heart failure and complications and ill-defined heart disease ,FeMale,14
+"Perth, WA ",SA350701,Cockburn,Coronary heart disease ,Male,208
+"Perth, WA ",SA350701,Cockburn,Cerebrovascular disease ,Male,64
+"Perth, WA ",SA350701,Cockburn,Chronic obstructive pulmonary disease (COPD) ,Male,63
+"Perth, WA ",SA350701,Cockburn,Heart failure and complications and ill-defined heart disease ,Male,22
+"Perth, WA ",SA350701,Cockburn,Coronary heart disease,FeMale,119
+"Perth, WA ",SA350701,Cockburn,Cerebrovascular disease ,FeMale,96
+"Perth, WA ",SA350701,Cockburn,Chronic obstructive pulmonary disease (COPD) ,FeMale,56
+"Perth, WA ",SA350701,Cockburn,Heart failure and complications and ill-defined heart disease ,FeMale,26
+"Perth, WA ",SA350701,Cockburn,Coronavirus disease 2019 (COVID-19) ,FeMale,23
+"Perth, WA ",SA350705,Rockingham,Coronary heart disease ,Male,225
+"Perth, WA ",SA350705,Rockingham,Chronic obstructive pulmonary disease (COPD),Male,110
+"Perth, WA ",SA350705,Rockingham,Cerebrovascular disease ,Male,54
+"Perth, WA ",SA350705,Rockingham,Heart failure and complications and ill-defined heart disease ,Male,32
+"Perth, WA ",SA350705,Rockingham,Coronary heart disease ,FeMale,106
+"Perth, WA ",SA350705,Rockingham,Chronic obstructive pulmonary disease (COPD) ,FeMale,98
+"Perth, WA ",SA350705,Rockingham,Cerebrovascular disease ,FeMale,81
+"Perth, WA ",SA350705,Rockingham,Heart failure and complications and ill-defined heart disease ,FeMale,32
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Coronary heart disease ,Male,206
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Cerebrovascular disease ,Male,103
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Chronic obstructive pulmonary disease (COPD),Male,77
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Coronavirus disease 2019 (COVID-19),Male,39
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Heart failure and complications and ill-defined heart disease ,Male,37
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Cerebrovascular disease,FeMale,160
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Coronary heart disease ,FeMale,134
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Chronic obstructive pulmonary disease (COPD) ,FeMale,69
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Heart failure and complications and ill-defined heart disease,FeMale,44
+"Northern Rivers, NSW ",SA311201,Richmond Valley - Coastal,Coronavirus disease 2019 (COVID-19),FeMale,24
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Coronary heart disease ,Male,226
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Cerebrovascular disease ,Male,100
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Chronic obstructive pulmonary disease (COPD) ,Male,79
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Heart failure and complications and ill-defined heart disease ,Male,48
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Coronavirus disease 2019 (COVID-19) ,Male,32
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Coronary heart disease ,FeMale,400
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Cerebrovascular disease ,FeMale,248
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Chronic obstructive pulmonary disease (COPD) ,FeMale,147
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Heart failure and complications and ill-defined heart disease ,FeMale,86
+"Northern Rivers, NSW ",SA311202,Richmond Valley - Hinterland,Coronavirus disease 2019 (COVID-19) ,FeMale,51
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Coronary heart disease ,Male,359
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Chronic obstructive pulmonary disease (COPD) ,Male,109
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Cerebrovascular disease ,Male,90
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Coronavirus disease 2019 (COVID-19) ,Male,69
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Heart failure and complications and ill-defined heart disease ,Male,59
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Coronary heart disease ,FeMale,244
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Chronic obstructive pulmonary disease (COPD),FeMale,126
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Cerebrovascular disease ,FeMale,120
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Coronavirus disease 2019 (COVID-19) ,FeMale,64
+"Northern Rivers, NSW ",SA312302,Campbelltown (NSW),Heart failure and complications and ill-defined heart disease,FeMale,57
