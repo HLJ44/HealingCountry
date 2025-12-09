@@ -17,9 +17,10 @@ Climate variables considered
       Columns:rainfall (total precipitation, mm)
                tmax (Maximum temperature, 0C)
                tmin (Minimum temperature, 0C)
-     URL: [https://www.longpaddock.qld.gov.au/silo/gridded-data/]
+  
+     URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
      Timespan: 1889 - 2025
-     Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
+     Comments: Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
   
 * File name:vapourpre_Kuana, vapourpre_Warumungu, vapourpre_Bandjulung
    
@@ -46,3 +47,12 @@ Climate variables considered
        Columns: evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))
                 radiation (MJ/m2)
        Comments: SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
+
+Mortality Data
+
+* File name:Mortality by Gender 2014-2018, Mortality by Gender 2019-2023, All course of deaths
+  
+       URL: https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books
+       Temporal resolution: Annual
+       Timespan: 2014 - 2018 and 2019 - 2023
+       Columns: Death count
