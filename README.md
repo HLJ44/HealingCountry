@@ -26,7 +26,7 @@ Three states in Australia were considered.
 
 * File name: SILO - Australian climate data
 
-Maximum temperature plays a key role in the variation of seasonal changes. 
+Maximum/Minimum temperature plays a key role in the variation of seasonal changes. 
 
         URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
         Timespan: 1889 - 2025
