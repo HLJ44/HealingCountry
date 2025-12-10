@@ -67,6 +67,16 @@ Maximum/Minimum temperature plays a key role in the variation of seasonal change
 
 ## Mortality Data
 
+•	The relevant environmental causes of death identified as:
+
+o	Asthma
+o	Chronic obstructive pulmonary disease (COPD)
+o	Cardiovascular disease
+o	Ischemic heart disease
+o	Cerebrovascular disease
+o	COVID-19
+
+
 * File name:Mortality by Gender 2014-2018, Mortality by Gender 2019-2023, All course of deaths
   
        URL: https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books
