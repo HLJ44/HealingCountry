@@ -18,7 +18,14 @@ Three states in Australia were considered.
                tmax (Maximum temperature, 0C)
                tmin (Minimum temperature, 0C)
 
+  One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
+  <img width="608" height="607" alt="image" src="https://github.com/user-attachments/assets/63d2aa97-8f8a-44de-81ff-5f44a489e395" />
+  <img width="603" height="603" alt="image" src="https://github.com/user-attachments/assets/4c2766ab-7c4d-4fbc-a438-f438a7b0bfe8" />
+  <img width="623" height="623" alt="image" src="https://github.com/user-attachments/assets/1295bb5b-070e-428f-b6f1-49d4063cbe36" />
+
+
+* File name: SILO - Australian climate data
      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
   
      Timespan: 1889 - 2025
