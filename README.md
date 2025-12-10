@@ -69,12 +69,12 @@ Maximum/Minimum temperature plays a key role in the variation of seasonal change
 
 •	The relevant environmental causes of death identified as:
 
-    * Asthma
-    * Chronic obstructive pulmonary disease (COPD)
-    * Cardiovascular disease
-    * Ischemic heart disease
-    * Cerebrovascular disease
-    * COVID-19
+    -Asthma
+    -Chronic obstructive pulmonary disease (COPD)
+    -Cardiovascular disease
+    -Ischemic heart disease
+    -Cerebrovascular disease
+    -COVID-19
 
 
 * File name:Mortality by Gender 2014-2018, Mortality by Gender 2019-2023, All course of deaths
