@@ -20,6 +20,7 @@ Three states in Australia were considered.
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
+![Image](https://github.com/user-attachments/assets/74680c0a-abe7-486c-8a57-d58826db17f0)
 
 * File name: SILO - Australian climate data
      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
