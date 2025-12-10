@@ -17,10 +17,11 @@ Three states in Australia were considered.
       Columns:rainfall (total precipitation, mm)
                tmax (Maximum temperature, 0C)
                tmin (Minimum temperature, 0C)
-  
+
+
      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/
      Timespan: 1889 - 2025
-     Comments: Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
+     Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable
 
   <img width="696" height="407" alt="image" src="https://github.com/user-attachments/assets/61ffae56-18c7-4932-a195-539689f19b0c" />
 
