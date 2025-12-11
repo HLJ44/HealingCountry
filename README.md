@@ -52,7 +52,8 @@ Maximum/Minimum temperature plays a key role in the variation of seasonal change
        Station code:	471
        Columns: Level
 
-
+* The figure below shows the increase fo the sea level in Kuana and the data is from Fremantle tide gauge. •	The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 → 2022). Metadata and raw/monthly records are archived by PSMSL / Australia’s National Tidal Centre.
+  
   <img width="735" height="410" alt="image" src="https://github.com/user-attachments/assets/ff69e9de-af93-40e4-a0d1-2206d2432747" />
 
 * File name:ER_Perth, ER_Tennant, ER_NSW
