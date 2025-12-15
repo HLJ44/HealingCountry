@@ -9,7 +9,10 @@ Three states in Australia were considered.
 
 ## Climate variables 
 
-* File name:agcdBandjalung, agcdwarumungu, agcdKuana
+* File name:
+    * agcdBandjalung
+    * agcdwarumungu
+    * agcdKuana
   
       URL: [https://www.longpaddock.qld.gov.au/silo/point-data/](http://opendap.bom.gov.au:8080/thredds)
       Temporal resolution: Monthly
