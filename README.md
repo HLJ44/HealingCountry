@@ -14,12 +14,13 @@ Three states in Australia were considered.
     * agcdwarumungu
     * agcdKuana
   
-      URL: [https://www.longpaddock.qld.gov.au/silo/point-data/](http://opendap.bom.gov.au:8080/thredds)
-      Temporal resolution: Monthly
-      Timespan: 1910 - 2024
-      Columns:rainfall (total precipitation, mm)
-               tmax (Maximum temperature, 0C)
-               tmin (Minimum temperature, 0C)
+ * URL: [The Bureau of Meteorology](http://opendap.bom.gov.au:8080/thredds)
+ * Temporal resolution: Monthly
+ * Timespan: 1910 - 2024
+ * Columns:
+     * rainfall (total precipitation, mm)
+     * tmax (Maximum temperature, 0C)
+     * tmin (Minimum temperature, 0C)
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
@@ -27,7 +28,7 @@ Three states in Australia were considered.
 ![Image](https://github.com/user-attachments/assets/74680c0a-abe7-486c-8a57-d58826db17f0)
 ![Image](https://github.com/user-attachments/assets/93c41499-35ed-4926-a5dd-53c6702212ee)
 
-* File name: SILO - Australian climate data
+* File name: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
 
 Maximum/Minimum temperature plays a key role in the variation of seasonal changes. 
 
