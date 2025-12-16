@@ -5,9 +5,7 @@ Three states in Australia are considered in study.
   * Warumungu (Tennant Creek NT)
   * Noongar (Perth WA) and 
   * Bundjalung (Northern Rivers NSW)
-
-
-    
+  
 ## Data Input
 
 The climate, health and death rates are considere as input variables. 
@@ -29,8 +27,7 @@ The climate, health and death rates are considere as input variables.
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
-<img width="1344" height="960" alt="image" src="https://github.com/user-attachments/assets/77e405bd-8f39-4553-8838-204a7a7486b7" />
-
+Climate Data/hidden_states.gif
 
 * File name:SILO - Australian climate data
 * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
