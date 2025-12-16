@@ -114,5 +114,4 @@ p <- ggplot(state_summary, aes(x = year, y = n_states)) +
 animate(p, nframes=50, fps=5)
 # Save as GIF (recommended for Word)
 anim_save("hidden_states_Bundjalung.gif", animation = p)
-
 ```
