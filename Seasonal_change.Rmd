@@ -15,7 +15,7 @@ library(gganimate)
 ```
 
 ```{r}
-#Read rainfall data into R
+#Read data into R
 Data <- read.csv("agcdKauana.csv",header = TRUE)
 attach(Data)
 head(Data)
@@ -23,6 +23,7 @@ tail(Data)
 ```
 
 ```{r}
+# Obtain hidden number of states
 years <- unique(Data$Year)
 nstates_opt <- numeric(length(years))
 
