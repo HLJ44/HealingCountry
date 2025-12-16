@@ -19,8 +19,8 @@ Three states in Australia were considered.
  * Timespan: 1910 - 2024
  * Columns:
      * rainfall (total precipitation, mm)
-     * tmax (Maximum temperature, 0C)
-     * tmin (Minimum temperature, 0C)
+     * tmax (Maximum temperature, °C)
+     * tmin (Minimum temperature, °C)
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
@@ -72,7 +72,9 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
 * Temporal resolution: Daily
 * Timespan: 1889 - 2025
 * Station code:	471
-* Columns: evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))radiation (MJ/m2)
+* Columns:
+   * evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))
+   * radiation (MJ/m2)
 
 SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
 
