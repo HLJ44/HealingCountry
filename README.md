@@ -29,6 +29,7 @@ The climate, health and death rates are considere as input variables.
 
 ![Perth,WA](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Kauana.gif?raw=true)
 ![Northern Rivers,NSW](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Bundjalung.gif?raw=true)
+![Tennant Creek,NT](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Warumungu.gif?raw=true)
 
 * File name:SILO - Australian climate data
 * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
