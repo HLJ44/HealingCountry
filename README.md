@@ -30,6 +30,7 @@ The climate, health and death rates are considere as input variables.
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
+<img width="1344" height="960" alt="image" src="https://github.com/user-attachments/assets/77e405bd-8f39-4553-8838-204a7a7486b7" />
 
 
 * File name:SILO - Australian climate data
