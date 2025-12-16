@@ -29,11 +29,8 @@ library(gganimate)
 Data <- read.csv("agcdKauana.csv",header = TRUE)
 attach(Data)
 head(Data)
-```
 
-```{r}
 #Optimum number of states
-
 years <- unique(Data$Year)
 nstates_opt <- numeric(length(years))
 
@@ -75,7 +72,59 @@ animate(p, nframes=50, fps=5)
 # Save as GIF (recommended for Word)
 anim_save("hidden_states.gif", animation = p)
 
-#rmarkdown::render("Seasonal_changes.Rmd")
+#rmarkdown::render("Seasonal_changes_Kauana.Rmd")
+
+```
+
+
+```{r}
+#Read data into R
+Data <- read.csv("agcdBundjalung.csv",header = TRUE)
+attach(Data)
+head(Data)
+tail(Data)
+
+#Optimum number of states
+
+years <- unique(Data$Year)
+nstates_opt <- numeric(length(years))
+
+for (i in seq_along(years)) {
+  subset_data <- subset(Data, Year == years[i])
+  
+  # Fit models with different numbers of states
+  bic_vals <- numeric()
+  for (k in 1:4) {
+    mod <- depmix(list(tmax ~ 1, tmin ~ 1, scale(rainfall) ~ 1),
+                  data = subset_data, nstates = k,
+                  family = list(gaussian(), gaussian(), gaussian()))
+    fit_mod <- fit(mod, verbose = FALSE)
+    bic_vals[k] <- BIC(fit_mod)
+  }
+  
+  # Store the number of states with lowest BIC
+  nstates_opt[i] <- which.min(bic_vals)
+}
+
+nstates_opt[nstates_opt == 4] <- 6
+nstates_opt[nstates_opt == 3] <- 4
+
+state_summary <- data.frame(
+  year = years,
+  n_states = nstates_opt
+)
+
+p <- ggplot(state_summary, aes(x = year, y = n_states)) +
+  geom_line(color="steelblue", size=2) +
+  geom_point(color="red", size=4) +
+  scale_y_continuous(breaks = unique(state_summary$n_states))+
+  labs(x = "Time", y = "Seasons", title = "Northern Rivers, NSW") +
+  theme_minimal() +
+  transition_reveal(year)
+
+animate(p, nframes=50, fps=5)
+# Save as GIF (recommended for Word)
+anim_save("hidden_states_Bundjalung.gif", animation = p)
 
 ```
 
