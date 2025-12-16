@@ -16,7 +16,7 @@ library(gganimate)
 
 ```{r}
 #Read rainfall data into R
-Data <- read.csv("Climate Data/agcdKauana.csv",header = TRUE)
+Data <- read.csv("agcdKauana.csv",header = TRUE)
 attach(Data)
 head(Data)
 tail(Data)
