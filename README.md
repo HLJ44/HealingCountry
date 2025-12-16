@@ -87,9 +87,9 @@ The relevant environmental causes of death identified as:
    * COVID-19
 
 * File name:
-   * Mortality by Gender 2014-2018
-   * Mortality by Gender 2019-2023
-   * All course of deaths
+   * Mortality by Gender 2014-2018.csv
+   * Mortality by Gender 2019-2023.csv
+   * All course of deaths.csv
   
 * URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
 * Temporal resolution: Annual
