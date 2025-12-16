@@ -10,9 +10,9 @@ Three states in Australia were considered.
 ## Climate variables 
 
 * File name:
-    * agcdBandjalung
-    * agcdwarumungu
-    * agcdKuana
+    * agcdBandjalung.csv
+    * agcdwarumungu.csv
+    * agcdKuana.csv
   
  * URL: [The Bureau of Meteorology](http://opendap.bom.gov.au:8080/thredds)
  * Temporal resolution: Monthly
@@ -40,9 +40,9 @@ Maximum/Minimum temperature plays a key role in the variation of seasonal change
 
   
 * File name:
-     * vapourpre_Kuana
-     * vapourpre_Warumungu
-     * vapourpre_Bandjulung
+     * vapourpre_Kuana.csv
+     * vapourpre_Warumungu.csv
+     * vapourpre_Bandjulung.csv
    
 * URL: [The Bureau of Meteorology](http://opendap.bom.gov.au:8080/thredds)
 * Temporal resolution: Monthly
@@ -64,9 +64,9 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
   <img width="735" height="410" alt="image" src="https://github.com/user-attachments/assets/ff69e9de-af93-40e4-a0d1-2206d2432747" />
 
 * File name:
-    * Evap_Perth
-    * Evap_Tennant
-    * Evap_NSW
+    * Evap_Perth.csv
+    * Evap_Tennant.csv
+    * Evap_NSW.csv
 
 * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
 * Temporal resolution: Daily
@@ -79,14 +79,12 @@ SILO data are not intended for use in climate change detection studies. Small da
 ## Mortality Data
 
 The relevant environmental causes of death identified as:
-
    * Asthma
    * Chronic obstructive pulmonary disease (COPD)
    * Cardiovascular disease
    * Ischemic heart disease
    * Cerebrovascular disease
    * COVID-19
-
 
 * File name:
    * Mortality by Gender 2014-2018
