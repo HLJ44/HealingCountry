@@ -78,32 +78,34 @@ SILO data are not intended for use in climate change detection studies. Small da
 
 ## Mortality Data
 
-•	The relevant environmental causes of death identified as:
+The relevant environmental causes of death identified as:
 
-    - Asthma
-    - Chronic obstructive pulmonary disease (COPD)
-    - Cardiovascular disease
-    - Ischemic heart disease
-    - Cerebrovascular disease
-    - COVID-19
+   * Asthma
+   * Chronic obstructive pulmonary disease (COPD)
+   * Cardiovascular disease
+   * Ischemic heart disease
+   * Cerebrovascular disease
+   * COVID-19
 
 
-* File name:Mortality by Gender 2014-2018, Mortality by Gender 2019-2023, All course of deaths
+* File name:
+   * Mortality by Gender 2014-2018
+   * Mortality by Gender 2019-2023
+   * All course of deaths
   
-       URL: https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books
-       Temporal resolution: Annual
-       Timespan: 2014 - 2018 and 2019 - 2023
-       Columns: Death count
+* URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
+* Temporal resolution: Annual
+* Timespan: 2014 - 2018 and 2019 - 2023
+* Columns: Death count
 
 <img width="1011" height="648" alt="image" src="https://github.com/user-attachments/assets/e8b7c3dc-f763-4dab-8947-44b8ca4e3b10" />
 
 ## Health Data
   
 * File name:Mental health
-  
-       URL: https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books
-       Temporal resolution: Annual
-       Timespan: 2017 - 2022
-       Worksheets: NSW, WA, NT
+* URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
+* Temporal resolution: Annual
+* Timespan: 2017 - 2022
+* Worksheets: NSW, WA, NT
 
   <img width="821" height="567" alt="image" src="https://github.com/user-attachments/assets/61a573f2-cee2-4536-8dd6-95fed6a2e740" />
