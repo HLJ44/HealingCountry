@@ -77,7 +77,7 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
    * radiation (MJ/m2)
 
 SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
-
+---
 ## Mortality Data
 
 The relevant environmental causes of death identified as:
@@ -99,7 +99,7 @@ The relevant environmental causes of death identified as:
 * Columns: Death count
 
 <img width="1011" height="648" alt="image" src="https://github.com/user-attachments/assets/e8b7c3dc-f763-4dab-8947-44b8ca4e3b10" />
-
+---
 ## Health Data
   
 * File name:Mental health.xlsx
