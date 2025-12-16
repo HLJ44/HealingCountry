@@ -60,9 +60,9 @@ p <- ggplot(state_summary, aes(x = year, y = n_states)) +
 
 animate(p, nframes=50, fps=5)
 # Save as GIF (recommended for Word)
-anim_save("hidden_states.gif", animation = p)
+anim_save("hidden_states_Kauana.gif", animation = p)
 
-#rmarkdown::render("Seasonal_changes_Kauana.Rmd")
+#rmarkdown::render("Seasonal_changes.Rmd")
 
 ```
 
