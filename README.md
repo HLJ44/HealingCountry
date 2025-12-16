@@ -28,11 +28,11 @@ Three states in Australia were considered.
 ![Image](https://github.com/user-attachments/assets/74680c0a-abe7-486c-8a57-d58826db17f0)
 ![Image](https://github.com/user-attachments/assets/93c41499-35ed-4926-a5dd-53c6702212ee)
 
-* File name:SILO - Australian climate data  
+* File name:SILO - Australian climate data
+* URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
+* Timespan: 1889 - 2025
 
-   * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
-   * Timespan: 1889 - 2025
-   * Access Gridded Data: Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable.
+Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable.
   
 Maximum/Minimum temperature plays a key role in the variation of seasonal changes. 
 
@@ -59,19 +59,22 @@ Maximum/Minimum temperature plays a key role in the variation of seasonal change
     * Station code:	471
     * Columns: Level
 
-The figure below shows the increase fo the sea level in Kuana and the data is from Fremantle tide gauge. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). 
+The figure below shows the increase of the sea level in Kuana and the data is from Fremantle tide gauge. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). 
   
   <img width="735" height="410" alt="image" src="https://github.com/user-attachments/assets/ff69e9de-af93-40e4-a0d1-2206d2432747" />
 
-* File name:ER_Perth, ER_Tennant, ER_NSW
+* File name:
+    * Evap_Perth
+    * Evap_Tennant
+    * Evap_NSW
 
-* URL: [https://psmsl.org/data/obtaining/stations/111.php?utm_source=chatgpt.com]   (https://www.longpaddock.qld.gov.au/silo/point-data/#responseTab2)
-       Temporal resolution: Daily
-       Timespan: 1889 - 2025
-       Station code:	471
-       Columns: evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))
-                radiation (MJ/m2)
-       Comments: SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
+* URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
+* Temporal resolution: Daily
+* Timespan: 1889 - 2025
+* Station code:	471
+* Columns: evap_comb (Evaporation - combination (synthetic estimate pre-1970, class A pan 1970 onwards, mm))radiation (MJ/m2)
+
+SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
 
 ## Mortality Data
 
