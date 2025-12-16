@@ -18,7 +18,6 @@ library(gganimate)
 #Read data into R
 Data <- read.csv("agcdKauana.csv",header = TRUE)
 attach(Data)
-head(Data)
 
 #Optimum number of states
 years <- unique(Data$Year)
@@ -70,8 +69,6 @@ anim_save("hidden_states_Kauana.gif", animation = p)
 #Read data into R
 Data <- read.csv("agcdBundjalung.csv",header = TRUE)
 attach(Data)
-head(Data)
-tail(Data)
 
 #Optimum number of states
 
@@ -119,10 +116,8 @@ anim_save("hidden_states_Bundjalung.gif", animation = p)
 
 ```{r}
 #Read data into R
-Data <- read.csv("agcdBundjalung.csv",header = TRUE)
+Data <- read.csv("agcdWarumungu.csv",header = TRUE)
 attach(Data)
-head(Data)
-tail(Data)
 
 #Optimum number of states
 
@@ -150,7 +145,7 @@ nstates_opt[nstates_opt == 4] <- 6
 nstates_opt[nstates_opt == 3] <- 4
 
 state_summary <- data.frame(
-  year = years,
+  year = years ,
   n_states = nstates_opt
 )
 
@@ -158,13 +153,13 @@ p <- ggplot(state_summary, aes(x = year, y = n_states)) +
   geom_line(color="steelblue", size=2) +
   geom_point(color="red", size=4) +
   scale_y_continuous(breaks = unique(state_summary$n_states))+
-  labs(x = "Time", y = "Seasons", title = "Northern Rivers, NSW") +
+  labs(x = "Time", y = "Seasons", title = "Tennant Creek, NT") +
   theme_minimal() +
   transition_reveal(year)
 
 animate(p, nframes=50, fps=5)
 # Save as GIF (recommended for Word)
-anim_save("hidden_states_Bundjalung.gif", animation = p)
+anim_save("hidden_states_Warumungu.gif", animation = p)
 
 ```
 
