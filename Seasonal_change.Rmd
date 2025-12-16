@@ -12,3 +12,11 @@ library(depmixS4)#Implement Hidden Markov Model
 library(ggplot2)
 ```
 
+```{r}
+#Read rainfall data into R
+Data <- read.csv("agcdKauana.csv",header = TRUE)
+attach(Data)
+head(Data)
+tail(Data)
+```
+
