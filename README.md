@@ -1,13 +1,16 @@
 # Healing-Country
 Examine the past, present, and likely future climate challenges, and will help communities lead decision-making around climate challenges with relevant agencies and services.
 
-Three states in Australia were considered.
- 
-* Warumungu (Tennant Creek NT)
-* Noongar (Perth WA) and 
-* Bundjalung (Northern Rivers NSW)
+Three states in Australia are considered in study. 
+  * Warumungu (Tennant Creek NT)
+  * Noongar (Perth WA) and 
+  * Bundjalung (Northern Rivers NSW)
+    
+## Data Input
 
-## Climate variables 
+The climate, health and death rates are considere as input variables. 
+
+### Climate variables 
 
 * File name:
     * agcdBandjalung.csv
@@ -79,7 +82,7 @@ SILO data are not intended for use in climate change detection studies. Small da
 
 ---
 
-## Mortality Data
+### Mortality Data
 
 The relevant environmental causes of death identified as:
    * Asthma
@@ -103,7 +106,7 @@ The relevant environmental causes of death identified as:
 
 ---
 
-## Health Data
+### Health Data
   
 * File name:Mental health.xlsx
 * URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
