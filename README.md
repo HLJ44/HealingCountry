@@ -27,8 +27,9 @@ The climate, health and death rates are considere as input variables.
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
-<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/16adedf2-b999-4de1-b5e5-9485207f07c9" />
-
+![Image](https://github.com/user-attachments/assets/cb918cf9-8765-4ce7-b51c-6039e5e7fd65)
+![Image](https://github.com/user-attachments/assets/74680c0a-abe7-486c-8a57-d58826db17f0)
+![Image](https://github.com/user-attachments/assets/93c41499-35ed-4926-a5dd-53c6702212ee)
 
 * File name:SILO - Australian climate data
 * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
