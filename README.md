@@ -27,9 +27,8 @@ The climate, health and death rates are considere as input variables.
 
   One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
 
-![Perth,WA](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Kauana.gif?raw=true)
-![Northern Rivers,NSW](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Bundjalung.gif?raw=true)
-![Tennant Creek,NT](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/hidden_states_Warumungu.gif?raw=true)
+<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/16adedf2-b999-4de1-b5e5-9485207f07c9" />
+
 
 * File name:SILO - Australian climate data
 * URL: [SILO - Australian climate data from 1889 to yesterday](https://www.longpaddock.qld.gov.au/silo/gridded-data/)
