@@ -39,7 +39,7 @@ Gridded data are available for a range of variables in NetCDF and GeoTiff format
   
 Maximum/Minimum temperature plays a key role in the variation of seasonal changes. 
 
-  <img width="696" height="407" alt="image" src="https://github.com/user-attachments/assets/61ffae56-18c7-4932-a195-539689f19b0c" />
+  ![temperature_variation](https://github.com/user-attachments/assets/242f7c39-26f2-447a-b7af-76dd57c45379)
 
 * File name:
      * vapourpre_Kuana.csv
