@@ -5,6 +5,9 @@ Three states in Australia are considered in study.
   * Warumungu (Tennant Creek NT)
   * Noongar (Perth WA) and 
   * Bundjalung (Northern Rivers NSW)
+
+    <img width="1536" height="1024" alt="Three sites" src="https://github.com/user-attachments/assets/13c27c7d-64ac-491e-ab82-9915f2f6d0c3" />
+
   
 ## Data Input
 
