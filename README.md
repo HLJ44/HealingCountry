@@ -28,7 +28,7 @@ The climate, health and death rates are considere as input variables.
      * tmax (Maximum temperature, °C)
      * tmin (Minimum temperature, °C)
 
-  One major objective of this project is to examinae the seasonal variation over the years across Australia and the below plots presents the identified changes graphically.
+  One major objective of this project is to examinae the season variation over the years across Australia and the below plots presents the identified changes graphically.
 
 ![Image](https://github.com/user-attachments/assets/cb918cf9-8765-4ce7-b51c-6039e5e7fd65)
 ![Image](https://github.com/user-attachments/assets/74680c0a-abe7-486c-8a57-d58826db17f0)
@@ -40,7 +40,7 @@ The climate, health and death rates are considere as input variables.
 
 Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable.
   
-Maximum/Minimum temperature plays a key role in the variation of seasonal changes. 
+Maximum/Minimum temperature plays a key role in the variation of season changes. Hence, the following figure depicts the heat anomalies across Australia from 1994 to 2024. 
 
   ![temperature_variation](https://github.com/user-attachments/assets/242f7c39-26f2-447a-b7af-76dd57c45379)
 
