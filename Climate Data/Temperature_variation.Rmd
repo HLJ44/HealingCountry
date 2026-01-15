@@ -1,0 +1,79 @@
+---
+title: "Temperature variation across Australia"
+output: html_document
+date: "2026-01-11"
+---
+
+```{r setup, include=FALSE}
+
+# Animation plot for the years 1994 to 2024
+library(terra)
+library(sf)
+library(ggplot2)
+library(gganimate)
+library(rnaturalearth)
+library(dplyr)
+
+# Load Australian boundary
+aus <- ne_states(country = "australia", returnclass = "sf")
+
+# Define years
+years <- 1994:2024
+
+# Initialize list
+all_data <- list()
+
+# Step 1: First, collect all values to compute global deciles
+all_values <- c()
+
+for (year in years) {
+  r <- rast(paste0("silo_daily_tmax_", year, ".nc"))
+  seasonal <- mean(r)
+  all_values <- c(all_values, values(seasonal))
+}
+
+# Compute global decile breaks
+decile_breaks <- quantile(all_values, probs = seq(0,1,0.1), na.rm = TRUE)
+
+# Step 2: Process each year with consistent deciles
+for (year in years) {
+  r <- rast(paste0("silo_daily_tmax_", year, ".nc"))
+  seasonal <- mean(r)
+  
+  # Classify using global decile breaks
+  deciles <- classify(seasonal, decile_breaks)
+  
+  df <- as.data.frame(deciles, xy = TRUE)
+  colnames(df)[3] <- "decile"
+  df$year <- year
+  all_data[[as.character(year)]] <- df
+}
+
+# Combine all years
+df_all <- bind_rows(all_data)
+
+# Plot with animation
+p <- ggplot(df_all) +
+  geom_tile(aes(x = x, y = y, fill = factor(decile))) +
+  geom_sf(data = aus, fill = NA, color = "black", size = 0.3) +
+  scale_fill_manual(values = c(
+    "#08306B", "#08519C", "#4292C6",
+    "#9ECAE1", "#FFFFCC", "#FED976",
+    "#FD8D3C", "#FC4E2A", "#E31A1C", "#800026"
+  )) +
+  theme_minimal() +
+  coord_sf() +
+  labs(
+    title = "Maximum Temperature Variation Across Years",
+    subtitle = "Year: {closest_state}",
+    fill = "Decile"
+  ) +
+  transition_states(year, transition_length = 2, state_length = 1, wrap = FALSE) +
+  ease_aes('linear')
+
+# Render animation
+animate(p, nframes = length(years)*10, fps = 2, width = 800, height = 600)
+
+# Optionally save
+anim_save("temperature_variation.gif")
+```
