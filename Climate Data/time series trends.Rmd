@@ -10,7 +10,6 @@ library(readxl)
 library(zoo)
 library(dplyr)
 library(imputeTS)#Filling missing values using seasonal decomposition
-library(depmixS4)#Implement Hidden Markov Model
 library(ggplot2)
 ```
 
