@@ -47,7 +47,7 @@ Maximum/Minimum temperature plays a key role in the variation of season changes.
 
   In addition the following plots represents the maximum daily temperature throughtout the year for Lismore, Tennant Creek and Perth regions. 
 
- ![Tennant Creek](https://github.com/user-attachments/assets/0bdf3dda-f46b-4d87-b644-7b5bd83ffac0)
+ https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/climate_temp_circular_tennant1.gif?raw=true
 
 
 * File name:
