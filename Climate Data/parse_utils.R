@@ -1,7 +1,7 @@
 
 process_data_LP <- function(location) {
   selected_cols <- c("Date", "Day", "T.Max", "T.Min", "Rain", "Evap", "Radn", "VP", "RHmaxT", "RHminT" )
-  file_name <- paste0("HealingCountry/Climate Data/LP_", location, "_grid.txt")
+  file_name <- paste0("Climate Data\LP_", location, "_grid.txt")
   file_content <- readLines(file_name)
   filtered_content <- file_content[!grepl('^"', file_content)]
   col_names <- scan(text = filtered_content[1], what = character(), sep = "", quiet = TRUE)
