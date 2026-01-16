@@ -1,0 +1,73 @@
+---
+title: "Rolling Window"
+output: html_document
+date: "2026-01-16"
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(zoo)
+library(dplyr)
+library(depmixS4)#Implement Hidden Markov Model
+library(ggplot2)
+```
+
+```{r}
+
+#Read rainfall data into R
+Data <- read.csv("Climate Data/agcdKauana.csv",header = TRUE)
+attach(Data)
+head(Data)
+tail(Data)
+
+#Time series plot
+time_series <- ts(tmax, start = c(1910,1), frequency=365.25)
+# Plot each component separately
+
+# Starting considering a particular year 
+df_data <- Data %>%
+  filter(Year == 1910)
+head(df_data)
+tail(df_data)
+
+plot(df_data$tmax,col="blue4",xlab="Time",ylab="Maximum Temperature", type ="l",
+     main="Daily Maximum Temperature \n in year 1910")
+
+model2 <- depmix(df_data$tmax ~ 1, data = data.frame(df_data$tmax),nstates = 2, family = gaussian())
+fit2 <- fit(model2)
+model3 <- depmix(df_data$tmax ~ 1, data = data.frame(df_data$tmax), nstates = 3, family = gaussian())
+fit3 <- fit(model3)
+model4 <- depmix(df_data$tmax ~ 1, data = data.frame(df_data$tmax), nstates = 4, family = gaussian())
+fit4 <- fit(model4)
+model5 <- depmix(df_data$tmax ~ 1, data = data.frame(df_data$tmax), nstates = 5, family = gaussian())
+fit5 <- fit(model5)
+model6 <- depmix(df_data$tmax ~ 1, data = data.frame(df_data$tmax), nstates = 6, family = gaussian())
+fit6 <- fit(model6)
+plot(2:6, c(BIC(fit2),BIC(fit3),BIC(fit4),BIC(fit5),BIC(fit6)), type = "b", xlab = "Number of States", ylab = "BIC", main = "BIC vs Number of States")
+
+# Decode states using the Viterbi algorithm
+states <- posterior(fit5)$state
+df_data$state <- states
+
+# Calculate mean value for each state
+state_means <- tapply(df_data$tmax, df_data$state, mean)
+
+# Map states to their mean values
+df_data$state_value <- state_means[df_data$state]
+
+data_with_states <- data.frame(
+  Time = 1:length(df_data$tmax),
+  Value = df_data$tmax,
+  State = df_data$state_value
+)
+
+# Plot original data and states using ggplot2
+ggplot(data_with_states, aes(x = Time)) +
+  geom_line(aes(y = Value), color = "blue", size = 1) +  # Original data
+  geom_step(aes(y = State), color = "red", size = 1) +  # States as step function
+  labs(title = "Seasonal variation in year 1930",
+       x = "Time",
+       y = "Maximum Temperature") +
+  theme_minimal()
+```
+
