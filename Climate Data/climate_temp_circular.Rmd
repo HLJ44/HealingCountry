@@ -10,7 +10,10 @@ library(dplyr)
 
 source("plot_utils.R")
 source("parse_utils.R")
+```
 
+
+```{r}
 location = "tennant" # options are: perth, tennant, lismore
 
 name_mapping <- c(
@@ -61,3 +64,59 @@ print(anim)
 ```{r}
 anim_save(paste0("climate_temp_circular_",location,"2.gif"), animation = anim)
 ```
+
+```{r}
+location = "lismore" # options are: perth, tennant, lismore
+
+name_mapping <- c(
+  "lismore" = "Lismore",
+  "perth" = "Perth",
+  "tennant" = "Tennant Creek"
+)
+mapped_location <- name_mapping[location]
+
+data <- process_data_LP(location)
+data
+
+# circular plot with temperature on the radial axis and time (day_of_year) on the angular axis
+# all history, new years overlayed
+plot <- plot_reveal(data, mapped_location)
+
+# Create the animation and display it inline
+nframes=length(unique(data$year))
+anim <- animate(plot, nframes = nframes, fps = 10, width = 800, height = 800, renderer = gifski_renderer())
+print(anim)
+
+```
+
+```{r}
+anim_save(paste0(location,"_maxtemp1.gif"), animation = anim)
+```
+
+```{r}
+location = "perth" # options are: perth, tennant, lismore
+
+name_mapping <- c(
+  "lismore" = "Lismore",
+  "perth" = "Perth",
+  "tennant" = "Tennant Creek"
+)
+mapped_location <- name_mapping[location]
+
+data <- process_data_LP(location)
+data
+
+# circular plot with temperature on the radial axis and time (day_of_year) on the angular axis
+# all history, new years overlayed
+plot <- plot_reveal(data, mapped_location)
+
+# Create the animation and display it inline
+nframes=length(unique(data$year))
+anim <- animate(plot, nframes = nframes, fps = 10, width = 800, height = 800, renderer = gifski_renderer())
+print(anim)
+```
+
+```{r}
+anim_save(paste0(location,"_maxtemp1.gif"), animation = anim)
+```
+
