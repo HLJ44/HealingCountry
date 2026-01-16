@@ -1,0 +1,115 @@
+---
+title: "Trends"
+output: html_document
+date: "2026-01-15"
+---
+
+```{r setup, include=FALSE}
+# Load the libraries
+library(readxl)
+library(zoo)
+library(dplyr)
+library(imputeTS)#Filling missing values using seasonal decomposition
+library(depmixS4)#Implement Hidden Markov Model
+library(ggplot2)
+```
+
+```{r}
+#Read maximum temperature data into R
+Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+
+#Time series plot
+ts_Kauana <- ts(Data_Kauana$tmax, start = c(1910,1), frequency=365.25)
+decomposed_Kauana  <- decompose(ts_Kauana)
+ts_Bundjalung <- ts(Data_Bundjalung$tmax, start = c(1910,1), frequency=365.25)
+decomposed_Bundjalung  <- decompose(ts_Bundjalung)
+ts_warumungu <- ts(Data_warumungu$tmax, start = c(1910,1), frequency=365.25)
+decomposed_warumungu  <- decompose(ts_warumungu)
+                                
+# Extract components from decompose()
+trend_Kauana <- decomposed_Kauana$trend
+trend_Bundjalung <- decomposed_Bundjalung$trend
+trend_warumungu <- decomposed_warumungu$trend
+
+# Plot each component separately
+plot(trend_Kauana,  ylab = "Mean Maimum Temperature", col = "blue4",
+     main = "Daily Mean Maximum Temperature from 1910 to 2025",ylim=c(20,45))
+lines(trend_Bundjalung, col = "red3", lwd = 2)
+lines(trend_warumungu, col = "cyan4", lwd = 2)
+legend("topleft",
+       legend = c("Perth, WA", "Northern Rivers, NSW","Tennant Creek, NT"),
+       col = c("blue4", "red3","cyan4"),
+       lty = 1,
+       lwd = 2,
+       bty = "n",      # removes the box
+       cex = 0.8)   # makes legend text smaller
+```
+
+```{r}
+#Read minimum temperature data into R
+Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+
+#Time series plot
+ts_Kauana <- ts(Data_Kauana$tmin, start = c(1910,1), frequency=365.25)
+decomposed_Kauana  <- decompose(ts_Kauana)
+ts_Bundjalung <- ts(Data_Bundjalung$tmin, start = c(1910,1), frequency=365.25)
+decomposed_Bundjalung  <- decompose(ts_Bundjalung)
+ts_warumungu <- ts(Data_warumungu$tmin, start = c(1910,1), frequency=365.25)
+decomposed_warumungu  <- decompose(ts_warumungu)
+                                
+# Extract components from decompose()
+trend_Kauana <- decomposed_Kauana$trend
+trend_Bundjalung <- decomposed_Bundjalung$trend
+trend_warumungu <- decomposed_warumungu$trend
+
+# Plot each component separately
+plot(trend_Kauana,  ylab = "Mean Minimum Temperature", col = "blue4",
+     main = "Daily Mean Minimum Temperature from 1910 to 2025",ylim=c(10,30))
+lines(trend_Bundjalung, col = "red3", lwd = 2)
+lines(trend_warumungu, col = "cyan4", lwd = 2)
+legend("topleft",
+       legend = c("Perth, WA", "Northern Rivers, NSW","Tennant Creek, NT"),
+       col = c("blue4", "red3","cyan4"),
+       lty = 1,
+       lwd = 2,
+       bty = "n",      # removes the box
+       cex = 0.8)   # makes legend text smaller
+```
+```{r}
+#Read total rainfall data into R
+Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+
+#Time series plot
+ts_Kauana <- ts(Data_Kauana$rainfall, start = c(1910,1), frequency=365.25)
+decomposed_Kauana  <- decompose(ts_Kauana)
+ts_Bundjalung <- ts(Data_Bundjalung$rainfall, start = c(1910,1), frequency=365.25)
+decomposed_Bundjalung  <- decompose(ts_Bundjalung)
+ts_warumungu <- ts(Data_warumungu$rainfall, start = c(1910,1), frequency=365.25)
+decomposed_warumungu  <- decompose(ts_warumungu)
+                                
+# Extract components from decompose()
+trend_Kauana <- decomposed_Kauana$trend
+trend_Bundjalung <- decomposed_Bundjalung$trend
+trend_warumungu <- decomposed_warumungu$trend
+
+# Plot each component separately
+plot(trend_Kauana,  ylab = "Precipitation", col = "blue4",
+     main = "Daily Total Rainfall from 1910 to 2025",ylim=c(0,10))
+lines(trend_Bundjalung, col = "red3", lwd = 2)
+lines(trend_warumungu, col = "cyan4", lwd = 2)
+legend("topleft",
+       legend = c("Perth, WA", "Northern Rivers, NSW","Tennant Creek, NT"),
+       col = c("blue4", "red3","cyan4"),
+       lty = 1,
+       lwd = 2,
+       bty = "n",      # removes the box
+       cex = 0.8)   # makes legend text smaller
+
+```
+
