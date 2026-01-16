@@ -1,0 +1,39 @@
+---
+title: "Sea Level"
+output: html_document
+date: "2026-01-16"
+---
+
+```{r}
+sea_fremantle <- read.csv("Sea Level Fremantle.csv", header = TRUE)
+
+time_series_fremantle <- ts(sea_fremantle$Level, start = c(1897,1), frequency=12)
+time_series_fremantle [time_series_fremantle  == -99999] <- NA
+plot(time_series_fremantle,ylab="Monthly Mean Sea Level (mm)", col="blue4",
+     main="Fremantle Gauge")
+```
+```{r}
+sea_yamba <- read.csv("Sea Level Yamba.csv", header = TRUE)
+
+time_series_yamba <- ts(sea_yamba $Level, start = c(1986,1), frequency=12)
+time_series_yamba  [time_series_yamba   == -99999] <- NA
+plot(time_series_yamba ,ylab="Monthly Mean Sea Level (mm)", col="red4",
+     main="Fremantle Gauge")
+```
+```{r}
+
+time_series_fremantle [time_series_fremantle  == -99999] <- NA
+plot(time_series_fremantle,ylab="Monthly Mean Sea Level (mm)", col="blue4",
+     main="Fremantle Gauge")
+time_series_yamba  [time_series_yamba   == -99999] <- NA
+lines(time_series_yamba, col = "red3", lwd = 2)
+
+legend("topleft",
+       legend = c("Fremantle", "Yamba"),
+       col = c("blue4", "red3"),
+       lty = 1,
+       lwd = 2,
+       bty = "n",      # removes the box
+       cex = 0.8)   # makes legend text smaller
+```
+
