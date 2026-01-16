@@ -18,7 +18,7 @@ sea_yamba <- read.csv("Sea Level Yamba.csv", header = TRUE)
 time_series_yamba <- ts(sea_yamba $Level, start = c(1986,1), frequency=12)
 time_series_yamba  [time_series_yamba   == -99999] <- NA
 plot(time_series_yamba ,ylab="Monthly Mean Sea Level (mm)", col="red4",
-     main="Fremantle Gauge")
+     main="Yamba Gauge")
 ```
 ```{r}
 
