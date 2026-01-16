@@ -1,7 +1,7 @@
 
 process_data_LP <- function(location) {
   selected_cols <- c("Date", "Day", "T.Max", "T.Min", "Rain", "Evap", "Radn", "VP", "RHmaxT", "RHminT" )
-  file_name <- paste0("Data/LP_", location, "_grid.txt")
+  file_name <- paste0("Climate Data/LP_", location, "_grid.txt")
   file_content <- readLines(file_name)
   filtered_content <- file_content[!grepl('^"', file_content)]
   col_names <- scan(text = filtered_content[1], what = character(), sep = "", quiet = TRUE)
@@ -23,7 +23,7 @@ process_data_LP <- function(location) {
 }
 
 process_data_ABS <- function(){
-  file_path <- "./Data/abs_population_sa.xlsx"
+  file_path <- "./Climate Data/abs_population_sa.xlsx"
   population_data <- read_excel(file_path, sheet = "Table 1", skip = 5)
   first_row <- population_data[1, ]
   colnames(population_data)[1:8] <- first_row[1:8]
