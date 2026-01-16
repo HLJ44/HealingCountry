@@ -70,9 +70,9 @@ Maximum/Minimum temperature plays a key role in the variation of season changes.
     * Station code:	471
     * Columns: Level
 
-The figure below shows the increase of the sea level in Kuana and the data is from Fremantle tide gauge. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). 
+The figure below shows the increase of the sea level in Kuana and the data is from Fremantle tide gauge and Yamba is a tide guage representing Bundjalung country. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). In both regions the sea level appear to be increases over the years. 
   
-  <img width="735" height="410" alt="image" src="https://github.com/user-attachments/assets/ff69e9de-af93-40e4-a0d1-2206d2432747" />
+  <img width="1290" height="763" alt="image" src="https://github.com/user-attachments/assets/e9cccf10-6b5b-4e20-a86c-79a7482753e1" />
   <img width="1138" height="683" alt="image" src="https://github.com/user-attachments/assets/56b3a031-a3b5-45c5-9aaf-f2aca381cae1" />
 
 
