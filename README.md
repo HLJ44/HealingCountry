@@ -44,6 +44,11 @@ Maximum/Minimum temperature plays a key role in the variation of season changes.
 
   ![temperature_variation](https://github.com/user-attachments/assets/242f7c39-26f2-447a-b7af-76dd57c45379)
 
+
+  In addition the following plots represents the maximum daily temperature throughtout the year for Lismore, Tennant Creek and Perth regions. 
+
+  
+
 * File name:
      * vapourpre_Kuana.csv
      * vapourpre_Warumungu.csv
