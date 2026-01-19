@@ -72,17 +72,26 @@ Maximum/Minimum temperature plays a key role in the variation of season changes.
 
  ![Tenanat_creek](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/climate_temp_circular_tennant1.gif?raw=true)
 
-The figure below shows the increase of the sea level in Kuana and the data is from Fremantle tide gauge and Yamba is a tide guage representing Bundjalung country. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). In both regions the sea level appear to be increases over the years.
+The figure below shows the increase of the sea level in Kuana and the data is from Fremantle tide gauge and Yamba is a tide guage representing Bundjalung country. The Fremantle tide gauge is the long-running reference for the Perth area (monthly data from 1897 to  2022). In both regions the sea level appear to be increases over the years (Sea Level.Rmd).
   
-* File name: Seal level
+* File name: Seal level Fremantle
   
     * URL: [PSMSL / Australia’s National Tidal Centre](https://psmsl.org/data/obtaining/)
     * Temporal resolution: Monthly
     * Timespan: 1897 - 2024
     * Station code:	471
-    * Columns: Level
+    * Columns: Year, Date, Level
 
   <img width="1290" height="763" alt="image" src="https://github.com/user-attachments/assets/e9cccf10-6b5b-4e20-a86c-79a7482753e1" />
+
+* File name: Seal level Yamba
+  
+    * URL: [PSMSL / Australia’s National Tidal Centre](https://psmsl.org/data/obtaining/)
+    * Temporal resolution: Monthly
+    * Timespan: 1986 - 2024
+    * Station code:	310
+    * Columns: Year, Date, Level
+    * 
   <img width="1290" height="763" alt="image" src="https://github.com/user-attachments/assets/b6db0a51-2863-4b4b-92a8-59f49c32565a" />
 
 
