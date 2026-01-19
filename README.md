@@ -98,6 +98,7 @@ After analyzing humidity data it was observed that the Tennant Creek is consiste
 
 ![humidity_lismore](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/lismore_humidity_animation.gif?raw=true)
 ![humidity_perth](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/perth_humidity_animation.gif?raw=true)
+![humidity_tennant](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/tennant_humidity_animation.gif?raw=true)
 
 * File name:
      * vapourpre_Kuana.csv
