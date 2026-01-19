@@ -94,6 +94,9 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
     * 
   <img width="1290" height="763" alt="image" src="https://github.com/user-attachments/assets/b6db0a51-2863-4b4b-92a8-59f49c32565a" />
 
+After analyzing humidity data it was observed that the Tennant Creek is consistently drier with stronger day–night humidity contrasts, while, Perth and Lismore are more humid overall and more stable, reflecting its coastal influence. The estimated relative humidity at max/min temperatures is represent in following figures. 
+
+
 
 * File name:
      * vapourpre_Kuana.csv
