@@ -16,7 +16,7 @@ library(gifski)
 source("plot_utils.R")
 source("parse_utils.R")
 
-location = "lismore" # options are: perth, tennant, lismore
+location = "tennant" # options are: perth, tennant, lismore
 
 name_mapping <- c(
   "lismore" = "Lismore",
