@@ -1,0 +1,91 @@
+---
+title: "Humidity"
+output: html_document
+date: "2026-01-19"
+---
+
+```{r}
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(lubridate)
+library(tidyr)
+library(gganimate)
+library(gifski)
+
+source("plot_utils.R")
+source("parse_utils.R")
+
+location = "lismore" # options are: perth, tennant, lismore
+
+name_mapping <- c(
+  "lismore" = "Lismore",
+  "perth" = "Perth",
+  "tennant" = "Tennant Creek"
+)
+mapped_location <- name_mapping[location]
+data <- process_data_LP(location)
+data
+```
+
+```{r}
+# Aggregate the data by year
+aggregated_data <- data %>%
+  group_by(year) %>%
+  summarise(
+    RHminT = mean(RHminT, na.rm = TRUE),
+    RHmaxT = mean(RHmaxT, na.rm = TRUE)
+  )
+```
+
+
+
+```{r}
+# Make RHminT negative for mirroring
+aggregated_data <- aggregated_data %>%
+  mutate(RHminT = -RHminT)
+
+# Pivot to long format
+long_data <- aggregated_data %>%
+  pivot_longer(cols = c(RHmaxT, RHminT),
+               names_to = "Variable",
+               values_to = "Value")
+
+# Find symmetric axis limit
+lim <- max(abs(long_data$Value), na.rm = TRUE)
+
+# Mirrored plot
+p <- ggplot(long_data, aes(x = Value, y = factor(year), fill = Variable)) +
+  geom_bar(stat = "identity", width = 0.8) +
+  scale_x_continuous(
+    limits = c(-lim, lim),
+    labels = abs
+  ) +
+  scale_y_discrete(breaks = function(x) x[seq(1, length(x), by = 5)]) +
+  labs(
+    title = paste0(mapped_location, " – Average Daily Min / Max Humidity"),
+    x = "Humidity (%)",
+    y = "Year",
+    fill = ""
+  ) +
+  theme_minimal() 
+
+
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.6)
+
+
+
+  animated_plot <- p + 
+    transition_reveal(along = year) +  # Reveals data year by year
+    ease_aes('linear')  # Smooth linear animation
+  
+  # Set animation parameters (duration matches the length of the music, e.g., 30 seconds)
+  animation <- animate(animated_plot, duration = 30, width = 800, height = 600, renderer = gifski_renderer())
+  animation
+  
+  # Save the animated plot as a GIF
+  anim_save(paste0(location, "_humidity_animation.gif"), animation = animation)
+  
+
+```
+
