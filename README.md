@@ -47,6 +47,29 @@ Maximum/Minimum temperature plays a key role in the variation of season changes.
 
   In addition the following plots represents the maximum daily temperature throughtout the year for Lismore, Tennant Creek and Perth regions (climate_temp_circular.Rmd). 
 
+  - **Filenames**:  
+  - `LP_lismore_grid.txt`  
+  - `PL_perth_grid.txt`  
+  - `LP_tennant_grid.txt`
+  
+- **URL**: [Long Paddock Point Data](https://www.longpaddock.qld.gov.au/silo/point-data/)
+  
+- **Spatial resolution**: 0.05° x 0.05° (approx. 5.5 km north-south × 5 km east-west)  
+- **Temporal resolution**: Daily  
+- **Timespan**: 1889 - 2024  
+- **Comments**: Interpolated data to avoid missingness and provide estimates closer to cities of interest.  
+- **Data source used for AusEn**: Yes
+
+**Columns**:
+- `T.Max` (°C; Maximum temperature)
+- `T.Min` (°C; Minimum temperature)
+- `Rain` (mm; Rainfall)
+- `Evap` (mm; Evaporation)
+- `Radn` (MJ/m²; Radiation)
+- `VP` (hPa; Vapour Pressure)
+- `RHmaxT` (%; Estimated Relative Humidity at Temperature T.Max)
+- `RHminT` (%; Estimated Relative Humidity at Temperature T.Min)
+
  ![Tenanat_creek](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/climate_temp_circular_tennant1.gif?raw=true)
 
 
