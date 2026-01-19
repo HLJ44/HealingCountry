@@ -96,10 +96,6 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
 
 After analyzing humidity data it was observed that the Tennant Creek is consistently drier with stronger day–night humidity contrasts, while, Perth and Lismore are more humid overall and more stable, reflecting its coastal influence. The estimated relative humidity at max/min temperatures is represent in following figures. 
 
-![humidity_lismore](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/lismore_humidity_animation.gif?raw=true)
-![humidity_perth](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/perth_humidity_animation.gif?raw=true)
-![humidity_tennant](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/tennant_humidity_animation.gif?raw=true)
-
 * File name:
      * vapourpre_Kuana.csv
      * vapourpre_Warumungu.csv
@@ -111,6 +107,10 @@ After analyzing humidity data it was observed that the Tennant Creek is consiste
 * Columns:
      * vapourpres_h09 (Humidity 9.0 am, hPa)
      * vapourpres_h15 (Humidity 3.0 pm, hPa)
+
+![humidity_lismore](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/lismore_humidity_animation.gif?raw=true)
+![humidity_perth](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/perth_humidity_animation.gif?raw=true)
+![humidity_tennant](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/tennant_humidity_animation.gif?raw=true)
 
 * File name:
     * Evap_Perth.csv
