@@ -12,7 +12,7 @@ library(ggpattern)
 
 source("parse_utils.R")
 
-location = "lismore" 
+location = "tennant" 
 
 name_mapping <- c(
   "lismore" = "Lismore",
