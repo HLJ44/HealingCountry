@@ -134,8 +134,8 @@ Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (part
 * File Name:
 
     * URL: [Atmosphere Data Source](https://ads.atmosphere.copernicus.eu/requests?tab=all)
-    * Temporal resolution: Daily (selected time as 00:00 UTC, however 3-hourly is available
-    * Timespan:2003-2024
+    * Temporal resolution: Daily (selected time as 00:00 UTC, however 3-hourly is available)
+    * Timespan: 2003-2024
     * Columns:
         * Particulate matter d < 1 µm (PM1)
         * Particulate matter d < 2.5 µm (PM2.5)
