@@ -57,35 +57,3 @@ for (var in unique(df$variable)) {
 ```
 
 
-```{r}
-
-for (loc in unique(pivoted_dt$location)) {
-  location_data <- pivoted_dt[pivoted_dt$location == loc, ]
-  
-  annual_avg <- location_data %>%
-    mutate(year = format(as.Date(date), "%Y")) %>%
-    group_by(variable, year) %>%
-    summarize(annual_avg_value = mean(value, na.rm = TRUE))
-  
-  p <- ggplot(location_data, aes(x = as.Date(date), y = value, color = variable, group = variable)) +
-    geom_line() +
-    facet_wrap(~variable, scales = "free_y") +
-    labs(title = paste("Time Series of Variables for", loc),
-         x = "Date", y = "Value", color = "Variable") +
-    theme_minimal() +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    scale_x_date(date_labels = "%Y-%m", date_breaks = "4 years")
-  
-  p <- p + 
-    geom_line(data = annual_avg, aes(x = as.Date(paste0(year, "-01-01")), y = annual_avg_value, group = variable), 
-              color = "red", linetype = "dotted") +
-    labs(title = paste("Air Quality for", loc, "with Annual Averages"))
-  
-  p_interactive <- ggplotly(p)
-  print(p_interactive)
-  file_name <- paste0("air_quality_", loc, ".html")
-  saveWidget(p_interactive, file_name)
-}
-
-```
-
