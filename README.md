@@ -94,6 +94,7 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
     * 
   <img width="1290" height="763" alt="image" src="https://github.com/user-attachments/assets/b6db0a51-2863-4b4b-92a8-59f49c32565a" />
 
+After analyzing humidity data it was observed that the Tennant Creek is consistently drier with stronger day–night humidity contrasts, while, Perth and Lismore are more humid overall and more stable, reflecting its coastal influence. The estimated relative humidity at max/min temperatures is represent in following figures (humidity.Rmd). 
 
 * File name:
      * vapourpre_Kuana.csv
@@ -106,6 +107,10 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
 * Columns:
      * vapourpres_h09 (Humidity 9.0 am, hPa)
      * vapourpres_h15 (Humidity 3.0 pm, hPa)
+
+![humidity_lismore](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/lismore_humidity_animation.gif?raw=true)
+![humidity_perth](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/perth_humidity_animation.gif?raw=true)
+![humidity_tennant](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/tennant_humidity_animation.gif?raw=true)
 
 * File name:
     * Evap_Perth.csv
@@ -121,6 +126,10 @@ The figure below shows the increase of the sea level in Kuana and the data is fr
    * radiation (MJ/m2)
 
 SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
+
+Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (particles with a diameter of 10 micrometers or smaller) and PM2.5 (particles with a diameter of 2.5 micrometers or smaller). These measurements are crucial for assessing air quality. The below figures summarize the bahavior of PM in Lismore, Perth and Tenannt Creek (air_quality.Rmd). 
+
+
 
 * File Name:
 
