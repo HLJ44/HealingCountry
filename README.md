@@ -141,7 +141,7 @@ Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (part
 
  <img width="3000" height="1800" alt="image" src="https://github.com/user-attachments/assets/d4abf441-132a-42a4-930e-6d96bc5b4134" />
 
-In addition, the below figure showcases the avarage temperature projection scenarios at Tennant Creek. The IPCC's uses five illustrative scenarios, denoted as SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, which represent different trajectories of future greenhouse gas emissions and their associated levels of global warming.These scenarios range from very low emissions (SSP1-1.9), which aligns with the 1.5°C Paris Agreement goal, to very high emissions (SSP5-8.5), which depicts futures with no climate mitigation efforts (scenario_projections.Rmd).
+In addition, the below figure showcases the avarage temperature projection scenarios at Tennant Creek. The IPCC's uses five illustrative scenarios, denoted as SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, which represent different trajectories of future greenhouse gas emissions and their associated levels of global warming.These scenarios range from very low emissions (SSP1-1.9), which aligns with the 1.5°C Paris Agreement goal, to very high emissions (SSP5-8.5), which depicts futures with no climate mitigation efforts (temperature_projections.Rmd).
 
 <img width="3000" height="1800" alt="climate_temp_projections_tennant3" src="https://github.com/user-attachments/assets/565612b3-c8c8-435b-aa33-fd5657405604" />
 
