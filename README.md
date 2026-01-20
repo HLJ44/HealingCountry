@@ -129,17 +129,18 @@ SILO data are not intended for use in climate change detection studies. Small da
 
 Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (particles with a diameter of 10 micrometers or smaller) and PM2.5 (particles with a diameter of 2.5 micrometers or smaller). These measurements are crucial for assessing air quality. The below figures summarize the bahavior of PM in Lismore, Perth and Tenannt Creek (air_quality.Rmd). 
 
-
-
 * File Name:
 
     * URL: [Atmosphere Data Source](https://ads.atmosphere.copernicus.eu/requests?tab=all)
-    * Temporal resolution: Daily (selected time as 00:00 UTC, however 3-hourly is available
-    * Timespan:2003-2024
+    * Temporal resolution: Daily (selected time as 00:00 UTC, however 3-hourly is available)
+    * Timespan: 2003-2024
     * Columns:
         * Particulate matter d < 1 µm (PM1)
         * Particulate matter d < 2.5 µm (PM2.5)
         * Particulate matter d < 10 µm (PM10)
+
+ <img width="3000" height="1800" alt="image" src="https://github.com/user-attachments/assets/d4abf441-132a-42a4-930e-6d96bc5b4134" />
+
 ---
 
 ### Mortality Data
