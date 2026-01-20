@@ -145,7 +145,9 @@ In addition, the below figure showcases the avarage temperature projection scena
 
 <img width="3000" height="1800" alt="climate_temp_projections_tennant3" src="https://github.com/user-attachments/assets/565612b3-c8c8-435b-aa33-fd5657405604" />
 
+The IPCC SSP scenarios (SSP1-1.9, SSP2-4.5, SSP3-7.0, SSP5-8.5) are emissions pathways, and could use with all climate variables. The following plot shows the precipitation projections under SSP scenarios (rainfall_projection.Rmd).
 
+![Perth](https://github.com/HLJ44/HealingCountry/blob/main/Climate%20Data/rainfall_projections_perth.png?raw=true)
 
 ---
 
