@@ -127,7 +127,7 @@ After analyzing humidity data it was observed that the Tennant Creek is consiste
 
 SILO data are not intended for use in climate change detection studies. Small data movements caused by climate change can be easily confounded by changes resulting from instrumental biases and relocating recording stations.
 
-Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (particles with a diameter of 10 micrometers or smaller) and PM2.5 (particles with a diameter of 2.5 micrometers or smaller). These measurements are crucial for assessing air quality. The below figures summarize the bahavior of PM in Perth, WA (air_quality.Rmd). 
+Particulate Matter (PM): Refers to tiny particles in the air, such as PM10 (particles with a diameter of 10 micrometers or smaller) and PM2.5 (particles with a diameter of 2.5 micrometers or smaller). These measurements are crucial for assessing air quality. The below figures summarize the bahavior of PM in Lismore, Perth and Tenannt Creek (air_quality.Rmd). 
 
 
 
