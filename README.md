@@ -165,6 +165,7 @@ The IPCC SSP scenarios (SSP1-1.9, SSP2-4.5, SSP3-7.0, SSP5-8.5) are emissions pa
 
 According to Hertzog L. et al. (2024)  in below figure,  the number of suicide deaths attributable to heat anomalies in the study period of 2000-2019 can be seen, and the results reveal that the heat anomalies are potentially associated with fewer suicide deaths among the younger age group (0 – 29 years old) and increased deaths among the 55+ age group.
   
+<img width="1295" height="735" alt="image" src="https://github.com/user-attachments/assets/b9d9fd33-ef1d-4687-b37c-ee1d1cd64b97" />
 
   ---
 
