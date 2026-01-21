@@ -1,0 +1,40 @@
+---
+title: "Mental Health"
+output: html_document
+date: "2026-01-21"
+---
+
+```{r}
+# Load necessary packages
+library(tidyverse)
+library(ggplot2)
+library(reshape2)  # for data transformation
+library(dplyr)
+```
+```{r}
+# Mental disorders NSW
+years <- 2017:2022
+data <- data.frame(
+  Year = years,
+  `Dementia & Organic` = c(20376, 17042, 17443, 19572, 21740, 18087),
+  `Mood Disorders` = c(347902, 282943, 307838, 321787, 318999, 259397),
+  `Anxiety & Stress` = c(148081, 170410, 197990, 212723, 216109, 188543)
+)
+
+# Convert data to long format
+df_long <- data %>%
+  pivot_longer(-Year, names_to = "Category", values_to = "Count")
+
+# Stacked Area Chart
+ggplot(df_long, aes(x = Year, y = Count, fill = Category)) +
+  geom_area(alpha = 0.8 , position = "stack") +
+  scale_fill_brewer(palette = "Set3") +
+  theme_minimal() +
+  labs(
+    title = "Mental Health Diagnoses Over Time in NSW",
+    x = "Year",
+    y = "Number of Cases",
+    fill = "Category"
+  )
+```
+
