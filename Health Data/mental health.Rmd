@@ -37,4 +37,70 @@ ggplot(df_long, aes(x = Year, y = Count, fill = Category)) +
     fill = "Category"
   )
 ```
+```{r}
+#Heatmap for mental health data in WA
+# Data frame
+df <- data.frame(
+  Factor = c(
+    "Neurocognitive Disorders", "Mood Disorders", "Anxiety & Stress Disorders"
+  ),
+  `2017` = c(3109, 41390, 48400),
+  `2018` = c(8045, 108253, 85380),
+  `2019` = c(7739, 103180, 89979),
+  `2020` = c(8569, 110639, 99595),
+  `2021` = c(8068, 108202, 100641),
+  `2022` = c(5857, 83692, 91885),
+  check.names = FALSE
+)
+
+# Convert to long format
+df_long <- df %>%
+  pivot_longer(cols = -Factor, names_to = "Year", values_to = "Count")
+
+# Heatmap
+ggplot(df_long, aes(x = Year, y = Factor, fill = Count)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "#f0f9e8", high = "#084081") +
+  labs(
+    title = "Heatmap of Mental Health Disorder Factors in WA",
+    x = "Year",
+    y = "Mental Disorder",
+    fill = "Count"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid = element_blank()
+  )
+```
+
+```{r}
+
+#Heat map for Northern Territory
+# ---- Data ----
+df <- tribble(
+  ~Category, ~`2017`, ~`2018`, ~`2019`, ~`2020`, ~`2021`, ~`2022`,
+  "Organic Mental Disorders", 608, 831, 718, 657, 749, 688,
+  "Mood (Affective) Disorders", 10833, 11953, 12480, 12087, 11906, 10803,
+  "Anxiety and Stress-Related Disorders", 7485, 8316, 9144, 9917, 9804, 8434
+)
+
+# Convert to long format
+df_long <- df %>%
+  pivot_longer(cols = -Category, names_to = "Year", values_to = "Count")
+
+# ---- Heatmap ----
+ggplot(df_long, aes(x = Year, y = Category, fill = Count)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "#f1eef6", high = "#54278f") +
+  labs(
+    title = "Heatmap of Mental Disorder Categories in NT",
+    x = "Year",
+    y = "Category",
+    fill = "Count"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
 
