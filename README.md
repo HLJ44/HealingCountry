@@ -158,6 +158,7 @@ The IPCC SSP scenarios (SSP1-1.9, SSP2-4.5, SSP3-7.0, SSP5-8.5) are emissions pa
 * Temporal resolution: Annual
 * Timespan: 2017 - 2022
 * Worksheets: NSW, WA, NT
+* R-markdown file: mental health.Rmd
 
   <img width="821" height="567" alt="image" src="https://github.com/user-attachments/assets/61a573f2-cee2-4536-8dd6-95fed6a2e740" />
 
