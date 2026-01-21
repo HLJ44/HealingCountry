@@ -151,7 +151,19 @@ The IPCC SSP scenarios (SSP1-1.9, SSP2-4.5, SSP3-7.0, SSP5-8.5) are emissions pa
 
 ---
 
-### Mortality Data
+### Health Data
+  
+* File name:Mental health.xlsx
+* URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
+* Temporal resolution: Annual
+* Timespan: 2017 - 2022
+* Worksheets: NSW, WA, NT
+
+  <img width="821" height="567" alt="image" src="https://github.com/user-attachments/assets/61a573f2-cee2-4536-8dd6-95fed6a2e740" />
+
+  ---
+
+  ### Mortality Data
 
 The relevant environmental causes of death identified as:
    * Asthma
@@ -174,13 +186,3 @@ The relevant environmental causes of death identified as:
 <img width="1011" height="648" alt="image" src="https://github.com/user-attachments/assets/e8b7c3dc-f763-4dab-8947-44b8ca4e3b10" />
 
 ---
-
-### Health Data
-  
-* File name:Mental health.xlsx
-* URL: [Australian Institute of Health and Welfare(AIHW)](https://www.aihw.gov.au/reports/life-expectancy-deaths/mort-books/contents/mort-books)
-* Temporal resolution: Annual
-* Timespan: 2017 - 2022
-* Worksheets: NSW, WA, NT
-
-  <img width="821" height="567" alt="image" src="https://github.com/user-attachments/assets/61a573f2-cee2-4536-8dd6-95fed6a2e740" />
