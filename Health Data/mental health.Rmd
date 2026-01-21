@@ -104,3 +104,142 @@ ggplot(df_long, aes(x = Year, y = Category, fill = Count)) +
 
 ```
 
+```{r}
+# Data
+total_suicides <- 50733
+heat_related <- 264
+other_suicides <- total_suicides - heat_related
+
+# Scale for plotting
+scale <- 50
+total_dots <- ceiling(total_suicides / scale)
+heat_dots <- ceiling(heat_related / scale)
+other_dots <- total_dots - heat_dots
+
+# Calculate grid size
+grid_size <- ceiling(sqrt(total_dots))
+
+# Create grid
+x <- rep(1:grid_size, each = grid_size)
+y <- rep(1:grid_size, times = grid_size)
+
+# Create type vector
+type <- c(rep("Heat-related", heat_dots),
+          rep("Other suicides", other_dots))
+
+# Trim excess points to match total_dots
+x <- x[1:total_dots]
+y <- y[1:total_dots]
+type <- type[1:total_dots]
+
+# Combine into data frame
+dots <- data.frame(x = x, y = y, type = type)
+
+# Plot
+ggplot(dots, aes(x = x, y = y, color = type)) +
+  geom_point(shape = 16, size = 3) +
+  scale_color_manual(values = c("Heat-related" = "red", "Other suicides" = "grey70")) +
+  labs(
+    title = "Suicides Attributable to Climate Change-Induced Heat",
+    subtitle = paste0("Heat-related suicides: ", heat_related, " (0.5%) of ", total_suicides),
+    color = ""
+  ) +
+  theme_void() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    legend.position = "bottom"
+  )
+```
+
+```{r}
+# smooth seasonal curve
+month <- seq(1, 12, length.out = 200)
+logRR <- 0.05 * cos((month - 1) / 12 * 2 * pi)  # smooth seasonal shape
+se <- 0.02 + 0.005 * cos((month - 4) / 12 * 2 * pi)  # varying uncertainty
+
+df <- data.frame(
+  month = month,
+  logRR = logRR,
+  lower = logRR - se,
+  upper = logRR + se
+)
+
+# Define Spring boundaries (example: month 9–11)
+spring_start <- 9
+spring_end   <- 11
+
+ggplot(df, aes(x = month, y = logRR)) +
+  geom_ribbon(aes(ymin = lower, ymax = upper), fill = "skyblue") +
+  geom_line(size = 1) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_vline(xintercept = spring_start, linetype = "dashed") +
+  geom_vline(xintercept = spring_end, linetype = "dashed") +
+  annotate("text", x = (spring_start + spring_end)/2, y = 0.02,
+           label = "Spring", size = 5) +
+  labs(x = "Month", y = "log Relative Risk") +
+  coord_cartesian(ylim = c(-0.1, 0.1)) +
+  theme_bw() +
+  theme(
+    text = element_text(size = 14),
+    panel.grid = element_blank()
+  )
+
+```
+
+```{r}
+# Create the data frame
+data <- tibble(
+  GCCSA = c("Sydney", "Rest of NSW", "Melbourne", "Rest of VIC", "Brisbane", "Rest of QLD",
+            "Adelaide", "Rest of SA", "Perth", "Rest of WA", "Hobart", "Rest of TAS",
+            "Darwin", "Rest of NT", "Canberra"),
+  Female = c(4.23, 4.69, 4.60, 4.77, 5.09, 6.14, 5.70, 4.89, 5.81, 6.74, 8.00, 6.14, 6.30, 10.76, 4.29),
+  Male = c(12.61, 19.09, 13.10, 19.59, 17.33, 22.20, 18.47, 20.98, 17.23, 23.58, 19.32, 24.72, 23.97, 40.41, 14.30),
+  Persons = c(8.36, 11.78, 8.77, 12.05, 11.11, 14.09, 11.95, 12.99, 11.47, 15.44, 13.49, 15.28, 15.58, 25.77, 9.22)
+)
+
+# Transform to long format for ggplot
+data_long <- data %>%
+  pivot_longer(cols = c(Female, Male, Persons), names_to = "Gender", values_to = "SuicideRate")
+
+# Plot suicide death rates by region
+ggplot(data_long, aes(x = GCCSA, y = SuicideRate, fill = Gender)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_minimal() +
+  labs(title = "Suicide Death Rates by Region and Gender (2000-2019)",
+       x = "Region (GCCSA)",
+       y = "Suicide Death Rate (per 100,000)",
+       fill = "Gender") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+# Create data frame
+data <- data.frame(
+  AgeGroup = rep(c("0-29", "30-54", "55+"), 2),
+  Sex = rep(c("Male", "Female"), each = 3),
+  Estimate = c(-117, 198, 264, -5, 12, 71),
+  LowerCI = c(-128, 189, 257, -5, 12, 69),
+  UpperCI = c(-106, 208, 271, -4, 13, 73),
+  Pvalue = c(0.0559, 0.3156, 0.0325, 0.936, 0.8751, 0.1906)
+)
+
+# Add significance label
+data <- data %>%
+  mutate(Significant = ifelse(Pvalue < 0.05, "*", ""))
+
+# Plot
+ggplot(data, aes(x = AgeGroup, y = Estimate, fill = Sex)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  geom_errorbar(aes(ymin = LowerCI, ymax = UpperCI), 
+                position = position_dodge(width = 0.8), width = 0.2) +
+  geom_text(aes(label = Significant, y = ifelse(Estimate > 0, UpperCI + 5, LowerCI - 5)),
+            position = position_dodge(width = 0.8), size = 5) +
+  labs(title = "Suicide Deaths Attributable to \n Temperature Heat Anomalies in Australia (2000–2019)",
+       y = "Estimated Deaths (95% CI)",
+       x = "Age Group") +
+  scale_fill_manual(values = c("steelblue", "tomato")) +
+  theme_minimal(base_size = 14)
+```
+
+
