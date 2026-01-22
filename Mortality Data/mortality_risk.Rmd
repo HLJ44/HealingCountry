@@ -4,26 +4,77 @@ output: html_document
 date: "2026-01-22"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r}
+#Import libraries
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(treemapify)
+library(splines)
 ```
 
-## R Markdown
+```{r}
+df <- read_csv("Mortality by Gender 2014-2018.csv")
+head(df)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+combined_plot <- df %>%
+  group_by(Site, Gender) %>%
+  summarise(Total_Deaths = sum(Deaths, na.rm = TRUE))
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+#Violin Plot — Gender-wise distribution by site
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_violin(trim = FALSE) +
+  facet_wrap(~ Site, scales = "free") +
+  labs(title = "Violin Plot of Mortality by Gender and Site 2014-2018",
+       x = "Gender", y = "Deaths") +
+  theme_minimal()
 ```
 
-## Including Plots
+```{r}
+df <- read_csv("Mortality by Gender 2019-2023.csv")
+attach(df)
+head(df)
 
-You can also embed plots, for example:
+combined_plot <- df %>%
+  group_by(Site, Gender) %>%
+  summarise(Total_Deaths = sum(Deaths, na.rm = TRUE))
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+#Violin Plot — Gender-wise distribution by site
+ggplot(df, aes(x = Gender, y = Deaths, fill = Gender)) +
+  geom_violin(trim = FALSE) +
+  facet_wrap(~ Site, scales = "free") +
+  labs(title = "Violin Plot of Mortality by Gender and Site 2019-2023",
+       x = "Gender", y = "Deaths") +
+  theme_minimal()
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r}
+#Treemap
+df <- read.csv("Mortality by Gender 2014-2018.csv",  fileEncoding = "latin1")
+
+df_sum <- df %>% group_by(cause) %>% summarise(deaths = sum(Deaths))
+
+ggplot(df,aes(area = Deaths, fill = cause, label = cause)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "white", place = "centre", grow = TRUE) +
+  labs(title = "Treemap of Causes of Death from 2014-2018",
+       fill = "Cause") +
+  theme_minimal()
+```
+
+```{r}
+#Treemap
+df <- read_csv("Mortality by Gender 2019-2023.csv")
+df_sum <- df %>% group_by(cause) %>% summarise(deaths = sum(Deaths))
+
+ggplot(df,aes(area = Deaths, fill = cause, label = cause)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "white", place = "centre", grow = TRUE) +
+  labs(title = "Treemap of Causes of Death from 2019-2023",
+       fill = "Cause") +
+  theme_minimal()
+
+```
