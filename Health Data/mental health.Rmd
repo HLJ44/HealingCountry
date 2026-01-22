@@ -243,3 +243,125 @@ ggplot(data, aes(x = AgeGroup, y = Estimate, fill = Sex)) +
 ```
 
 
+```{r}
+# Create a data frame for the meta-analysis results
+meta_data <- data.frame(
+  Analysis = c(
+    "Mean monthly temperature (incidence)",
+    "Mean daily temperature (incidence)",
+    "Mean monthly temperature (risk ratio)"
+  ),
+  EffectSize = c(1.5, 1.7, 1.01),  # % change for first two, RR for third
+  LowerCI = c(0.8, 0.3, 1.00),
+  UpperCI = c(2.2, 3.0, 1.01),
+  SampleSize = c("n=1,563,109", "n=113,523", "n=111,794"),
+  Studies = c("7 effects from 3 studies", "5 effects from 5 studies", "6 effects from 3 studies")
+)
+
+# Optional: create a label combining sample size and studies
+meta_data$Label <- paste0(meta_data$SampleSize, "; ", meta_data$Studies)
+
+# Reverse factor levels so first row appears at top
+meta_data$Analysis <- factor(meta_data$Analysis, levels = rev(meta_data$Analysis))
+
+# Plot forest plot
+ggplot(meta_data, aes(x = EffectSize, y = Analysis)) +
+  geom_point(size = 4, color = "red") +
+  geom_errorbarh(aes(xmin = LowerCI, xmax = UpperCI), height = 0.3, color = "black") +
+  geom_vline(xintercept = ifelse(meta_data$EffectSize[3] < 2, 1, 0), linetype = "dashed") + # reference line for RR=1
+  labs(
+    title = "Effect of Temperature Increases on Suicide Outcomes",
+    x = "Effect Size (% increase or RR)",
+    y = "",
+    caption = "Error bars = 95% CI"
+  ) +
+  geom_text(aes(label = Label, x = UpperCI + 0.05), hjust = 0, size = 3) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.text.y = element_text(size = 11),
+    plot.caption = element_text(size = 10)
+  ) +
+  xlim(min(meta_data$LowerCI)-0.5, max(meta_data$UpperCI)+0.5)  # add space for labels
+
+```
+```{r}
+#Relative risk plot
+# Data for the heatwave analysis
+heatwave_data <- data.frame(
+  Exposure = c("Non-heatwave", "Heatwave"),
+  RR = c(1, 1.097),  # baseline RR = 1, heatwave RR = 1 + 9.7%
+  LowerCI = c(1, 1.076),  # lower CI for heatwave
+  UpperCI = c(1, 1.119)   # upper CI for heatwave
+)
+
+# Plot Relative Risk
+ggplot(heatwave_data, aes(x = Exposure, y = RR)) +
+  geom_point(size = 5, color = "red") +
+  geom_errorbar(aes(ymin = LowerCI, ymax = UpperCI), width = 0.2, color = "black") +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "blue") +  # reference line
+  labs(
+    title = "Relative Risk of Suicide During Heatwave Periods",
+    y = "Relative Risk (95% CI)",
+    x = ""
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.text = element_text(size = 12)
+  )
+
+```
+
+```{r}
+# Data
+data <- data.frame(
+  Category = c("Displacement", "Mental Health Outcome"),
+  Yes = c(22, 37),
+  No = c(81-22, 81-37)
+)
+
+# Convert to long format
+data_long <- reshape2::melt(data, id.vars = "Category", variable.name = "Status", value.name = "Count")
+
+# Plot
+ggplot(data_long, aes(x = Category, y = Count, fill = Status)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("Yes" = "red", "No" = "grey70")) +
+  labs(title = "Impact of Flood on Respondents",
+       y = "Number of Respondents",
+       x = "",
+       fill = "") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 14))
+
+#-- Pictogram (Dot / Icon Array)
+total <- 81
+displaced <- 22
+mh_affected <- 37
+
+# Create dots data
+dots <- data.frame(
+  x = rep(1:ceiling(sqrt(total)), each = ceiling(sqrt(total))),
+  y = rep(1:ceiling(sqrt(total)), times = ceiling(sqrt(total))),
+  Status = c(
+    rep("Displaced", displaced),
+    rep("Mental Health", mh_affected),
+    rep("None", total - displaced - mh_affected)
+  )
+)
+
+# Trim excess dots
+dots <- dots[1:total, ]
+
+# Plot pictogram
+ggplot(dots, aes(x = x, y = y, color = Status)) +
+  geom_point(shape = 16, size = 3) +
+  scale_color_manual(values = c("Displaced" = "red", "Mental Health" = "orange", "None" = "grey70")) +
+  labs(title = "Flood Impact on Respondents (n=81)",
+       color = "") +
+  theme_void() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+        legend.position = "bottom")
+```
+
