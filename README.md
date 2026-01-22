@@ -199,9 +199,10 @@ The relevant environmental causes of death identified as:
 <img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/b44a5a5b-864d-42dd-b28d-a542bbbd9ee4" />
 <img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/d30127e5-723b-43f0-88be-cfc421df8c3f" />
 
+Further, the tree maps in below figures visualize the relative contribution of different causes of death for 2014 - 2018 and  2019 - 2023 time periods.
 
-
-<img width="1011" height="648" alt="image" src="https://github.com/user-attachments/assets/e8b7c3dc-f763-4dab-8947-44b8ca4e3b10" />
+<img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/66d0781c-b3c9-4a2a-ba2c-fbb139bae83a" />
+<img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/9605142e-143c-4c44-9016-60793dd192b9" />
 
 ---
 
