@@ -194,7 +194,7 @@ The relevant environmental causes of death identified as:
 * Timespan: 2014 - 2018 and 2019 - 2023
 * Columns: Death count
 
- The violin plots given below compares the mortality distributions for Females and Males across three sites for 2014 - 2018 and  2019 - 2023. 
+ The violin plots given below compares the mortality distributions for Females and Males across three sites for 2014 - 2018 and  2019 - 2023 (mortality_risk.Rmd). 
 
 <img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/b44a5a5b-864d-42dd-b28d-a542bbbd9ee4" />
 <img width="925" height="572" alt="image" src="https://github.com/user-attachments/assets/d30127e5-723b-43f0-88be-cfc421df8c3f" />
