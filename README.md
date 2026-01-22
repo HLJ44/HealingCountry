@@ -167,6 +167,11 @@ According to Hertzog L. et al. (2024)  in below figure,  the number of suicide d
   
 <img width="1295" height="735" alt="image" src="https://github.com/user-attachments/assets/b9d9fd33-ef1d-4687-b37c-ee1d1cd64b97" />
 
+Thompson et al (2023) indicates that during heatwave periods, suicide incidence increases by nearly 10% compared with non-heatwave periods as depicts in below figure. 
+
+<img width="942" height="676" alt="image" src="https://github.com/user-attachments/assets/9e24e3a3-9422-49a2-8664-36b6b07ee140" />
+
+
   ---
 
   ### Mortality Data
@@ -196,3 +201,5 @@ The relevant environmental causes of death identified as:
 References;
 
 1. Hertzog L, Charlson F, Tschakert P, Morgan GG, Norman R, Pereira G, et al. Suicide deaths associated with climate change-induced heat anomalies in Australia (2024): a time series regression analysis. BMJ Mental Health.;27:e301131. https://doi.org/10.1136/bmjment-2024-301131
+2. Thompson R, Lawrance EL, Roberts LF, Grailey K, Ashrafian H, Maheswaran H, Toledano MB, Darzi A. Ambient temperature and mental health: a systematic review and meta-analysis. Lancet Planet Health. 2023 Jul;7(7):e580-e589. doi: 10.1016/S2542-5196(23)00104-3. 
+
