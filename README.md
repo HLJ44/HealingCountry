@@ -167,6 +167,11 @@ According to Hertzog L. et al. (2024)  in below figure,  the number of suicide d
   
 <img width="1295" height="735" alt="image" src="https://github.com/user-attachments/assets/b9d9fd33-ef1d-4687-b37c-ee1d1cd64b97" />
 
+Thompson et al (2023) indicates that during heatwave periods, suicide incidence increases by nearly 10% compared with non-heatwave periods as depicts in below figure. 
+
+<img width="942" height="676" alt="image" src="https://github.com/user-attachments/assets/9e24e3a3-9422-49a2-8664-36b6b07ee140" />
+
+
   ---
 
   ### Mortality Data
