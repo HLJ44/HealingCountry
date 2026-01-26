@@ -106,7 +106,10 @@ ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
 
 
 ```
+
+
 ```{r}
+#Lollipop Chart
 df <- read_csv("Mortality by Gender 2019-2023.csv")
 
 df <- df %>%
@@ -117,7 +120,7 @@ df <- df %>%
                                 "Coronavirus disease 2019 (COVID-19)" = "COVID-19",
                                 "Heart failure and complications and ill-defined heart disease" = "HFC"))
 
-#Lollipop Chart
+
 ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
   geom_segment(aes(xend = course_abbrev, yend = 0), linewidth = 1) +
   geom_point(size = 4) +
