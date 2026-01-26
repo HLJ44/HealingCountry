@@ -138,3 +138,24 @@ ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
 
 ```
 
+```{r}
+df <- read.csv("Mortality by Gender 2014-2018.csv",  fileEncoding = "latin1")
+
+df_heat <- df %>% count(Site, cause)
+ggplot(df_heat, aes(x = Site, y = cause, fill = n)) +
+  geom_tile() + 
+  labs(title = "Heatmap of Deaths by Site and Cause of  death for 2014-2018",
+       x = "Site", y = "Cause", fill = "Deaths") +
+  theme_minimal()
+```
+```{r}
+df <- read_csv("Mortality by Gender 2019-2023.csv")
+
+df_heat <- df %>% count(Site, cause)
+ggplot(df_heat, aes(x = Site, y = cause, fill = n)) +
+  geom_tile() + 
+  labs(title = "Heatmap of Deaths by Site and Cause of  death for 2019-2023",
+       x = "Site", y = "Cause", fill = "Deaths") +
+  theme_minimal()
+```
+
