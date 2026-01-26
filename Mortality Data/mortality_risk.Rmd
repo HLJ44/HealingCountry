@@ -76,5 +76,62 @@ ggplot(df,aes(area = Deaths, fill = cause, label = cause)) +
   labs(title = "Treemap of Causes of Death from 2019-2023",
        fill = "Cause") +
   theme_minimal()
+```
+
+```{r}
+#Lollipop Chart
+df <- read_csv("Mortality by Gender 2014-2018.csv")
+
+df <- df %>%
+  mutate(course_abbrev = recode(cause,
+                                "Coronary heart disease "= "CHD",
+                                "Cerebrovascular disease "  = "CD",
+                                "Chronic obstructive pulmonary disease (COPD) "= "COPD",
+                                "Heart failure and complications  " = "HFC"))
+
+ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
+  geom_segment(aes(xend = course_abbrev, yend = 0), linewidth = 1) +
+  geom_point(size = 4) +
+  facet_wrap(~ Site) +
+  labs(
+    title = "Lollipop Chart of Death Counts from 2014 to 2018",
+    x = "Cause of death (Abbreviation)",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.title = element_blank()
+  )
+
 
 ```
+```{r}
+df <- read_csv("Mortality by Gender 2019-2023.csv")
+
+df <- df %>%
+  mutate(course_abbrev = recode(cause,
+                                "Coronary heart disease"= "CHD",
+                                "Cerebrovascular disease"  = "CD",
+                                "Chronic obstructive pulmonary disease (COPD)"= "COPD",
+                                "Coronavirus disease 2019 (COVID-19)" = "COVID-19",
+                                "Heart failure and complications and ill-defined heart disease" = "HFC"))
+
+#Lollipop Chart
+ggplot(df, aes(x = course_abbrev, y = Deaths, color = Gender)) +
+  geom_segment(aes(xend = course_abbrev, yend = 0), linewidth = 1) +
+  geom_point(size = 4) +
+  facet_wrap(~ Site) +
+  labs(
+    title = "Lollipop Chart of Death Counts from 2019 to 2023",
+    x = "Cause of death (Abbreviation)",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.title = element_blank()
+  )
+
+```
+
