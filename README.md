@@ -171,7 +171,7 @@ Thompson et al (2023) indicates that during heatwave periods, suicide incidence 
 
 <img width="942" height="676" alt="image" src="https://github.com/user-attachments/assets/9e24e3a3-9422-49a2-8664-36b6b07ee140" />
 
-The relative risk of suicide in Western Australia with heat anomalies is depicted in the figure below, and there is a tendency in the number of suicide deaths with extreme heat conditions.
+The relative risk of suicide in Western Australia with heat anomalies is depicted in the figure below, and there is a tendency in the number of suicide deaths with extreme heat conditions (relative_risk.Rmd).
 
 <img width="1239" height="635" alt="image" src="https://github.com/user-attachments/assets/8b88c0b1-e39d-4280-ba60-c206576a7416" />
 
