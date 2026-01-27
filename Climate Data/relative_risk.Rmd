@@ -1,0 +1,109 @@
+---
+title: "Relative Risk of Suicide"
+output: html_document
+date: "2026-01-27"
+---
+
+```{r}
+# Load libraries
+library(tidyverse)
+```
+
+```{r}
+# Create the data
+dat <- read.csv("Relative_risk.csv", header=TRUE)
+df <- data.frame(dat)
+attach(df)
+```
+
+
+```{r}
+# Compute relative risk (WA vs Australia)
+df <- df %>%
+  mutate(
+    RR_WA = scale(WA),
+    Heat_z_WA = scale(WA_Heat_Anomalies)[,1]
+  )
+
+# Plot trend for WA
+ggplot(df, aes(x = Year)) +
+  geom_line(
+    aes(y = RR_WA, colour = "WA Relative Risk"),
+    linewidth = 1
+  ) +
+  geom_smooth(
+    aes(y = Heat_z_WA, colour = "WA Heat Anomalies"),
+    method = "loess",
+    se = FALSE,
+    linetype = "dashed"
+  ) +
+  labs(
+    title = "Age-Standardised Relative Risk of Suicide in WA",
+    y = "Relative Risk",
+    x = "Year",
+    colour = "Legend"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+```{r}
+# Plot trend for NSW
+df <- df %>%
+  mutate(
+    RR_NSW = scale(NSW),
+    Heat_z_NSW = scale(NSW_Heat_Anomalies)[,1]
+  )
+
+ggplot(df, aes(x = Year)) +
+  geom_line(
+    aes(y = RR_NSW, colour = "NSW Relative Risk"),
+    linewidth = 1
+  ) +
+  geom_smooth(
+    aes(y = Heat_z_NSW, colour = "NSW Heat Anomalies"),
+    method = "loess",
+    se = FALSE,
+    linetype = "dashed"
+  ) +
+  labs(
+    title = "Age-Standardised Relative Risk of Suicide in NSW",
+    y = "Relative Risk",
+    x = "Year",
+    colour = "Legend"
+  ) +
+  theme_minimal(base_size = 13)
+
+```
+
+```{r}
+# Plot trend for NT (from 1995 onwards)
+df_new <- df %>%
+  filter(Year >= 1995)
+
+df_new  <- df_new %>%
+    mutate(
+    RR_NT = scale(NT),
+    Heat_z_NT = scale(NT_Heat_Anomalies)[,1]
+  )
+
+ggplot(df_new, aes(x = Year)) +
+  geom_line(
+    aes(y = RR_NT, colour = "NT Relative Risk"),
+    linewidth = 1
+  ) +
+  geom_smooth(
+    aes(y = Heat_z_NT, colour = "NT Heat Anomalies"),
+    method = "loess",
+    se = FALSE,
+    linetype = "dashed"
+  ) +
+  labs(
+    title = "Age-Standardised Relative Risk of Suicide in NT",
+    y = "Relative Risk",
+    x = "Year",
+    colour = "Legend"
+  ) +
+  theme_minimal(base_size = 13)
+
+```
+
