@@ -40,7 +40,7 @@ The climate, health and death rates are considere as input variables.
 
 Gridded data are available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable.
   
-Maximum/Minimum temperature plays a key role in the variation of season changes. Hence, the following figure depicts the heat anomalies across Australia from 1994 to 2024 (Temperature_variation.Rmd). 
+Maximum/Minimum temperature plays a key role in the variation of season changes. Hence, the following figure depicts the heat anomalies across Australia from 1994 to 2024 (Temperature_variation.Rmd). Please download the data from SILO website if you want to reproduce the data. 
 
   ![temperature_variation](https://github.com/user-attachments/assets/242f7c39-26f2-447a-b7af-76dd57c45379)
 
