@@ -21,8 +21,8 @@ attach(df)
 # Compute relative risk (WA vs Australia)
 df <- df %>%
   mutate(
-    RR_WA = scale(WA),
-    Heat_z_WA = scale(WA_Heat_Anomalies)[,1]
+    RR_WA = log(WA/Australia),
+    Heat_z_WA = scale(WA_Heat_Anomalies)
   )
 
 # Plot trend for WA
@@ -38,8 +38,8 @@ ggplot(df, aes(x = Year)) +
     linetype = "dashed"
   ) +
   labs(
-    title = "Age-Standardised Relative Risk of Suicide in WA",
-    y = "Relative Risk",
+    title = "Age-Standardised Log Relative Risk of Suicide in WA",
+    y = "Log Relative Risk",
     x = "Year",
     colour = "Legend"
   ) +
@@ -50,7 +50,7 @@ ggplot(df, aes(x = Year)) +
 # Plot trend for NSW
 df <- df %>%
   mutate(
-    RR_NSW = scale(NSW),
+    RR_NSW = log(NSW/Australia),
     Heat_z_NSW = scale(NSW_Heat_Anomalies)[,1]
   )
 
@@ -66,8 +66,8 @@ ggplot(df, aes(x = Year)) +
     linetype = "dashed"
   ) +
   labs(
-    title = "Age-Standardised Relative Risk of Suicide in NSW",
-    y = "Relative Risk",
+    title = "Age-Standardised Log Relative Risk of Suicide in NSW",
+    y = "Log Relative Risk",
     x = "Year",
     colour = "Legend"
   ) +
@@ -82,7 +82,7 @@ df_new <- df %>%
 
 df_new  <- df_new %>%
     mutate(
-    RR_NT = scale(NT),
+    RR_NT = log(NT/Australia),
     Heat_z_NT = scale(NT_Heat_Anomalies)[,1]
   )
 
@@ -98,8 +98,8 @@ ggplot(df_new, aes(x = Year)) +
     linetype = "dashed"
   ) +
   labs(
-    title = "Age-Standardised Relative Risk of Suicide in NT",
-    y = "Relative Risk",
+    title = "Age-Standardised Log Relative Risk of Suicide in NT",
+    y = "Log Relative Risk",
     x = "Year",
     colour = "Legend"
   ) +
