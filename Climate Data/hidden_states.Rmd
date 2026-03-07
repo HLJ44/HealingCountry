@@ -49,7 +49,7 @@ state_summary <- data.frame(
   n_states = nstates_opt
 )
 
-write_csv(x = hidden_states_Kauana.csv,path="hidden_states_Kauana.csv")
+write_csv(state_summary, file ="hidden_states_Kauana.csv")
 
 p <- ggplot(state_summary, aes(x = year, y = n_states)) +
   geom_line(color="steelblue", size=2) +
