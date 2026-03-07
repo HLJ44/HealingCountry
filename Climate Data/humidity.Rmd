@@ -16,7 +16,7 @@ library(gifski)
 source("plot_utils.R")
 source("parse_utils.R")
 
-location = "tennant" # options are: perth, tennant, lismore
+location = "perth" # options are: perth, tennant, lismore
 
 name_mapping <- c(
   "lismore" = "Lismore",
@@ -36,6 +36,7 @@ aggregated_data <- data %>%
     RHminT = mean(RHminT, na.rm = TRUE),
     RHmaxT = mean(RHmaxT, na.rm = TRUE)
   )
+write.csv(aggregated_data, file = paste0(mapped_location,"_humidity.csv"))
 ```
 
 
