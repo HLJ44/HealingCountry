@@ -9,6 +9,7 @@ date: "2025-12-16"
 library(readxl)
 library(zoo)
 library(dplyr)
+library(tidyverse)
 library(depmixS4)#Implement Hidden Markov Model
 library(ggplot2)
 library(gganimate)
@@ -48,6 +49,7 @@ state_summary <- data.frame(
   n_states = nstates_opt
 )
 
+write_csv(x = hidden_states_Kauana.csv,path="hidden_states_Kauana.csv")
 
 p <- ggplot(state_summary, aes(x = year, y = n_states)) +
   geom_line(color="steelblue", size=2) +
