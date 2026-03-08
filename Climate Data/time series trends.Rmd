@@ -15,9 +15,9 @@ library(ggplot2)
 
 ```{r}
 #Read maximum temperature data into R
-Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
-Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
-Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+Data_Kauana <- read.csv("agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("agcdwarumungu.csv",header = TRUE)
 
 #Time series plot
 ts_Kauana <- ts(Data_Kauana$tmax, start = c(1910,1), frequency=365.25)
@@ -48,9 +48,9 @@ legend("topleft",
 
 ```{r}
 #Read minimum temperature data into R
-Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
-Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
-Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+Data_Kauana <- read.csv("agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("agcdwarumungu.csv",header = TRUE)
 
 #Time series plot
 ts_Kauana <- ts(Data_Kauana$tmin, start = c(1910,1), frequency=365.25)
@@ -80,9 +80,9 @@ legend("topleft",
 ```
 ```{r}
 #Read total rainfall data into R
-Data_Kauana <- read.csv("Climate data/agcdKauana.csv",header = TRUE)
-Data_Bundjalung <- read.csv("Climate data/agcdBundjalung.csv",header = TRUE)
-Data_warumungu <- read.csv("Climate data/agcdwarumungu.csv",header = TRUE)
+Data_Kauana <- read.csv("agcdKauana.csv",header = TRUE)
+Data_Bundjalung <- read.csv("agcdBundjalung.csv",header = TRUE)
+Data_warumungu <- read.csv("agcdwarumungu.csv",header = TRUE)
 
 #Time series plot
 ts_Kauana <- ts(Data_Kauana$rainfall, start = c(1910,1), frequency=365.25)
