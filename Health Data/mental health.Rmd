@@ -36,11 +36,13 @@ ggplot(df_long, aes(x = Year, y = Count, fill = Category)) +
     y = "Number of Cases",
     fill = "Category"
   )
+
+write.csv(df_long, file="Mental Health.csv")
 ```
 ```{r}
 #Heatmap for mental health data in WA
 # Data frame
-df <- data.frame(
+df_WA <- data.frame(
   Factor = c(
     "Neurocognitive Disorders", "Mood Disorders", "Anxiety & Stress Disorders"
   ),
@@ -54,11 +56,11 @@ df <- data.frame(
 )
 
 # Convert to long format
-df_long <- df %>%
+df_long_WA <- df_WA %>%
   pivot_longer(cols = -Factor, names_to = "Year", values_to = "Count")
 
 # Heatmap
-ggplot(df_long, aes(x = Year, y = Factor, fill = Count)) +
+ggplot(df_long_WA, aes(x = Year, y = Factor, fill = Count)) +
   geom_tile(color = "white") +
   scale_fill_gradient(low = "#f0f9e8", high = "#084081") +
   labs(
@@ -72,6 +74,8 @@ ggplot(df_long, aes(x = Year, y = Factor, fill = Count)) +
     axis.text.x = element_text(angle = 45, hjust = 1),
     panel.grid = element_blank()
   )
+
+
 ```
 
 ```{r}
