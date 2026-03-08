@@ -8,7 +8,7 @@ date: "2026-01-20"
 library(ggplot2)
 library(gganimate)
 library(dplyr)
-library(ggpattern)
+#library(ggpattern)
 
 source("parse_utils.R")
 
@@ -61,12 +61,12 @@ projections <- data.frame(
   High_Range = c(0, 0.85, 1.15, 0.95, 0, 0.95, 1.35, 1.55, 0, 0.95, 1.65, 2.65, 0, 0.95, 1.75, 3.75, 0, 1.05, 2.15, 4.85) + reference_period
 )
 
-projections
+write.csv(projections, file = "temperature_projections.csv")
 ```
 
 ```{r}
 ggplot(df, aes(x = Year, y = Avg_Temp)) +
-  geom_line(color = "blue", size = 1) +
+  geom_line(color = "black", size = 1) +
   labs(
     title = paste(mapped_location, "- Average Temperature"),
     x = "Year",
@@ -81,7 +81,7 @@ ggsave(filename = paste0("climate_temp_projections_", location, "1.png"),width =
 ```{r}
 # Plot historical data and future projections
 ggplot(df, aes(x = Year, y = Avg_Temp)) +
-  geom_line(color = "blue", size = 1) +
+  geom_line(color = "black", size = 1) +
   labs(
     title = paste(mapped_location, "- Average Temperature Projections"),
     x = "Year",
@@ -103,7 +103,7 @@ ggsave(filename = paste0("climate_temp_projections_", location, "2.png"),width =
 
 ```{r}
 p <- ggplot() +
-  geom_line(data = df, aes(x = Year, y = Avg_Temp), color = "blue", size = 1) +
+  geom_line(data = df, aes(x = Year, y = Avg_Temp), color = "black", size = 1) +
   labs(
     title = paste(mapped_location, "- Average Temperature Senario Projections"),
     x = "Year",
