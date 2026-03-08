@@ -7,6 +7,7 @@ date: "2026-01-19"
 ```{r}
 library(dplyr)
 library(tidyr)
+library(tidyverse)
 library(ggplot2)
 library(plotly)
 library(htmlwidgets)
@@ -31,7 +32,7 @@ latlong_mapping <- list(
 
 df <- readRDS("../Climate Data/air_quality_processed.rds")
 df$date <- as.Date(df$date)
-
+write.csv(df, file = "air_quality.csv")
 ```
 
 
