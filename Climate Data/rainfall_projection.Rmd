@@ -8,7 +8,7 @@ date: "2026-01-20"
 library(ggplot2)
 library(gganimate)
 library(dplyr)
-library(ggpattern)
+#library(ggpattern)
 
 source("parse_utils.R")
 
@@ -44,6 +44,8 @@ reference_period <- df %>%
 
 reference_period
 ```
+
+
 ```{r}
 projections <- data.frame(
   Scenario = c(rep("SSP1-1.9", 4), rep("SSP1-2.6", 4), rep("SSP2-4.5", 4), rep("SSP3-7.0", 4), rep("SSP5-8.5", 4)),
@@ -59,12 +61,12 @@ projections <- data.frame(
   High_Range = c(0, 0.85, 1.15, 0.95, 0, 0.95, 1.35, 1.55, 0, 0.95, 1.65, 2.65, 0, 0.95, 1.75, 3.75, 0, 1.05, 2.15, 4.85) + reference_period
 )
 
-projections
+write.csv(projections,file="rainfall_projections.csv" )
 ```
 
 ```{r}
 p <- ggplot() +
-  geom_line(data = df, aes(x = Year, y = Avg_Rain), color = "blue", size = 1) +
+  geom_line(data = df, aes(x = Year, y = Avg_Rain), color = "black", size = 1) +
   labs(
     title = paste(mapped_location, "- Precipitation Senario Projections"),
     x = "Year",
